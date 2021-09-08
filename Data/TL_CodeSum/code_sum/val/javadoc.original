@@ -1,0 +1,95 @@
+this returns the hash code for the key . the hash code is generated from the internal string the key represents .
+fired when the request is started , override to handle in your own code
+this method gets called when a bound property is changed on the associated jtextcomponent . this is a hook which ui implementations may change to reflect how the ui displays bound properties of jtextcomponent subclasses . this is implemented to rebuild the actionmap based upon an editorkit change .
+writes a namespace qualified element or attribute name .
+remove all occurrences of the given regex pattern , replacing them with the empty string .
+add a gcm registration listener . this does not replace the existing listeners but adds to the list of listeners
+accept a training set
+determine if the agent is empty . in other words , the user hasn ' t entered any information for a single field yet .
+converts a timestamp to the byte sequence to be sent to the current time characteristic
+see iso 16022 : 2006 , 5 . 2 . 9 and annex b , b . 2
+load pbartner dependent order / invoice / shipment field .
+creates new form modpackinitializationpanel
+removes an existing value from the series .
+y is bigger than the head of the calendar , meaning that the coordination may represent a day of the calendar
+pretty printing accumulator function for doubles
+returns the integer attribute number for the passed attribute name .
+for news stories or other info gathering , setup player groups by student standing run through each type of player , add them to the appropriate year
+list currently deployed webapps .
+will clear attributes ! ! !
+provides a java string literal representing the parameter string . this includes surrounding double quotes , and quoted special characters , including utf escape sequences when necessary . < p > this function works only for ascii character encoding , and assumes this is the default encoding .
+this method calls proc insertfile and adds a record of file . it also validates the values passed .
+request gps update notification
+scans an addinteger literal . < p > on entry : ' pos ' is 1 + the index of the first char in the literal . on exit : ' pos ' is 1 + the index of the last char in the literal .
+removes a global mouse listener
+creates a new distributionlocator for this system and registers an mbean for managing it . < p > if the locator already exists , then this will simply register an mbean for it .
+positions the center two components into something that extends a jsplitpane
+determines whether a rule is an abstract rule . an abstract rule is one that has no terminals on its source side . if the rule is abstract , the rule ' s arity is returned . otherwise , 0 is returned .
+get the public uri for a portable path . this method returns public uris for only some portable paths , and does not check that the portable path is actually sane . note that this refuses to return portable paths that are outside of program : and preference :
+returns a hash code for this floatconstant object .
+send a log message if logging is enabled .
+register an extension namespace handler . this handler provides functions for testing whether a function is known within the namespace and also for invoking the functions .
+creates the handles and infos for the type parameter of the given binary member . adds new handles to the given vector .
+test against the " void nextbytes ( byte [ ] ) " method ; it checks out that different securerandom objects being supplied with the same seed return the same sequencies of bytes as results of their " nextbytes ( byte [ ] ) " methods
+signals a waiting take . called only from put / offer ( which do not otherwise ordinarily lock takelock . )
+creates a routing info based on any object . object ' s tostring ( ) method ' s output is used as the info text .
+adds view to specified cache . creates a cache list if it is null .
+generates a signed certificate and a private key .
+starts the underlying animator for a set of properties . we use a single animator that simply runs from 0 to 1 , and then use that fractional value to set each property value accordingly .
+adds a request object to this object .
+poisson probability mass function ( pmf ) for integer values .
+converts a byte to hex digit and writes to the supplied buffer
+split a gts into multiple gts by cutting in ' quiet zones ' , i . e . intervals of ' quietperiod ' or more during which there were no measurements . if ' gts ' has no values or if ' label ' is already part of the labels of ' gts ' , then the resulting list of gts will only contain a clone of ' gts ' .
+throws pngjinputexception if bad signature
+this either merges sketchin into gadget_ or gadget_ into sketchin . if merging into sketchin with ismodifiable set to false , copies elements from sketchin first , leaving original unchanged .
+prints the value of the object .
+subscribe asynchronously to a pipe
+copies stream , fires progress events by listener , can be interrupted by listener .
+internal helper that writes the current buffer to the output . the buffer position is reset to its initial value when this returns .
+damages a randomly determined bay door on the entity , if one exists
+enables / disables combos and buttons .
+prepares the data for volume tests .
+determines the icon based on the mime type .
+sets the current attribute as class attribute , i . e . it moves it to the end of the attributes
+adds a listener , to be notified when a reference is refreshed / swapped .
+writes the gpx file
+returns the value of this effect in the current selection .
+indicates if the absolute value of the argument is greater than or equal to the delta value with accuracy to 14 digits of precision . this avoids rounding errors at 15 digits or precision or greater .
+produce a comma delimited text row from a jsonarray . values containing the comma character will be quoted . troublesome characters may be removed .
+updates the audio track latency and playback position parameters .
+answers if there is an element in this queue equals to the object .
+closes the xmlwriter and the underlying output writer .
+replaces $ { property [ : default value ] } references in all attributes and text nodes of supplied node . if the property is not defined neither in the given properties instance nor in system . getproperty and no default value is provided , a runtime exception is thrown .
+creates pseudo function selector for given function and expression .
+fixing a query mistake covers most common wrong queries from the user
+reads a byte array from the input stream . < p > the two valid possibilities are either a & lt ; null > or a & lt ; base64 > .
+blocks until there is an utterance in the queue .
+long value of a positive bigdecimal
+find or create an evaluation result .
+are we running from a webstart instance ?
+returns the connection status .
+tries to schedule a runnable on the underlying executor . < br > rejected executions will be suppressed . < br > this is useful for cases when the clients eventloop is shut down before the eventloop of the underlying connection .
+how ' good ' does this sequence of points look ? the sequence must be clockwise and have the least acute angles possible .
+add a listener for changes to the model .
+we call this to guarantee that we fetch a fresh policy from the server . this is to be used if the url is invalid .
+implements the abstract method simulatemethod . it distributes the request to the corresponding methods by signatures .
+check if given path is a file and if it exists
+creates all references needed for this signature
+remove a networkconnection from a vm ' s networks .
+returns an enumeration describing the available options .
+returns the value unchanged .
+encodes a string into base64 format . no blanks or line breaks are inserted .
+file used as buffer , in no ramdirectory
+add the given attributes to the currently collected ones . these attributes are always added , regardless of whether on not an element is currently open .
+adds a new pan listener .
+how long ago the stream was last online . if the stream was never seen as online this session , then a huge number will be returned .
+computes the weighted distance to p_other .
+swap in the value as the new top of the stack and return the old value .
+returns a list with the paths of all java classes .
+returns the value of subtracting the first from the second number .
+creates and returns a stream of the words in the given text . words are a group of characters separated by one or more white spaces .
+loads the delete participants for the given element .
+calculates this buffer ' s hash code from the remaining chars . the position , limit , capacity and mark don ' t affect the hash code .
+print text to the output stream .
+this method will close the running app
+javax . net . ssl . sslengine # unwrap ( bytebuffer src , bytebuffer [ ] dsts , int offset , int length ) exception case : illegalstateexception should be thrown .

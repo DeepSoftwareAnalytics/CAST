@@ -11,7 +11,7 @@ Create an environment and activate it:
 	pip install pandas==1.0.5 gensim==3.5.0 scikit-learn==0.19.1 pycparser==2.18 javalang==0.11.0 tqdm networkx==2.3 nltk==3.4.4 psutil gin-config prettytable
     conda install pytorch torchvision cudatoolkit=10.1 -c pytorch
 
-Install Java 1.70
+Install Java 1.8
 
 Install pytorch according to your environment, see https://pytorch.org/ 
 you can use `nvcc --version` to check the cuda version. 
@@ -39,7 +39,7 @@ Download Processed the dataset by:
     $ bash get_data.sh
     $ cd ../
 or
-run python `pipeline.sh` to generate preprocessed data.
+run python `pipeline.sh` to generate preprocessed small data from scratch.
    
 |Dataset|train|valid|test|
 | :--------- | :------: | :----: | :----: |
@@ -62,15 +62,18 @@ You  can also train it from scratch.
 
     $ cd ./source_code/
     $ python casts.py  -cf_file "DATASET_NAME.json"  -ddp False
-    $ cd ../
-     
+    
+for example
+
+    $ python casts.py  -cf_file "TL_CodeSum.json"  -ddp False
+    
 #### Train in Multi-GPU
 
 Take 4-GPUs for example:
 
     $ cd ./source_code/
     $ python -m torch.distributed.launch --nproc_per_node=4  --master_addr='localhost' --master_port=23456 casts.py  -cf_file "DATASET_NAME.json" 
-    $ cd ../
+
 
 
 note: you can find the output in `./output/DATASET_NAME`. 
@@ -83,13 +86,19 @@ and the log file and predict result are saved in `./output/tl_codesum/predict.js
 
      $ cd ./source_code/
      $ python casts.py  -cf_file "DATASET_NAME.json"  -ddp False -only_test True
-     $ cd ../
      
+for example
+
+    $ python casts.py  -cf_file "TL_CodeSum.json"  -ddp False  -only_test True
   
 ### Evaluation  
      $ cd ./source_code/
      $ python evaluation.py -dataset DATASET_NAME
- 
+
+for example
+
+    $ python evaluation.py -dataset TL_CodeSum
+    
 ### Human evaluation
     
 Click [here](human-evaluation/README.md) to see the result of human evaluation

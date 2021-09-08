@@ -1,0 +1,2471 @@
+Id: 1
+ code 
+ private int currentDepth(){
+  try {
+    Integer oneBased=((Integer)DEPTH_FIELD.get(this));
+    return oneBased - 1;
+  }
+ catch (  IllegalAccessException e) {
+    throw new AssertionError(e);
+  }
+}
+Ground Truth: returns a 0 - based depth within the object graph of the current object being serialized . 
+Code-NN : returns a , object based depth in an in to the the the object being . .
+H-Deepcom : returns a - of depth the the current current current current .
+Attnndgru : returns a 0 - based depth as intended
+NeuralCodeSum :returns a 0 - based depth within the object graph graph of the object being serialized .
+Code2seq : returns the next value of the
+Hybrid-DRL: returns the number of milliseconds for the current thread
+Ast-attendgru: returns the ( 5 ) time , or more alternative base object
+CodeASTNN : returns the 0 - based depth within the object graph depth .
+CASTS  : returns a 0 - based depth within the object graph of the current object being serialized .
+---------------------------------------Id: 2
+ code 
+ protected void requestPassCodeConfirmation(){
+  clearBoxes();
+  mPassCodeHdr.setText(R.string.pass_code_reenter_your_pass_code);
+  mPassCodeHdrExplanation.setVisibility(View.INVISIBLE);
+  mConfirmingPassCode=true;
+}
+Ground Truth: ask to the user for retyping the pass code just entered before saving it as the current pass code . 
+Code-NN : ask to the user for the pass code code entered before saving it as the current pass code
+H-Deepcom : ask to the user for the the . the pass pass pass pass the pass the the the the code . code . . code the the the code the the the . . . . . . . .
+Attnndgru : ask to the user for the pass code just entered before saving it as the current pass code .
+NeuralCodeSum :ask to the user for retyping the current pass code as the user entered for saving code .
+Code2seq : resets the default view the
+Hybrid-DRL: called when the user view view view is view
+Ast-attendgru: ask to the user about to the user to allow for more control to stop
+CodeASTNN : ask to the pass code just entered before saving code just for retyping the pass code as the user code just entered by the user code
+CASTS  : ask to the user for retyping the pass code just entered before saving it as the current pass code .
+---------------------------------------Id: 3
+ code 
+ public void addRestrictedDomain(String domainName){
+  if (StringUtils.isEmpty(domainName)) {
+    return;
+  }
+  if (restrictedDomains == null) {
+    restrictedDomains=new ArrayList<>();
+  }
+  restrictedDomains.add(domainName);
+}
+Ground Truth: adds specified domain name to the list of restricted domains 
+Code-NN : adds specified qname expression scope the tail those global domains is is is is child if if - .
+H-Deepcom : adds full to domain to the generated . . . this this generated generated generated generated
+Attnndgru : adds an exit language .
+NeuralCodeSum :add a restricted name to the list of restricted domains
+Code2seq : adds a name name to the
+Hybrid-DRL: adds the specified domain to the list
+Ast-attendgru: adds domain name which maps domain to
+CodeASTNN : add specified domain name to the list of permitted domains
+CASTS  : adds specified domain name to the list of restricted domains
+---------------------------------------Id: 4
+ code 
+ public void writeNoScale(Image c,Component i){
+  if (page == null) {
+    newpage();
+  }
+  int x=x0 + width - (c.getWidth(null) + charwidth);
+  int y=y0 + (linenum * lineheight) + lineascent;
+  if (page != null && pagenum >= prFirst) {
+    page.drawImage(c,x,y,c.getWidth(null),c.getHeight(null),null);
+  }
+}
+Ground Truth: write a graphic to the printout . < p > this was not in the original class , but was added afterwards by kevin dickerson . it is a copy of the write , but without the scaling . < p > the image is positioned on the right side of the paper , at the current height . 
+Code-NN : draws a graphic so to printout color
+H-Deepcom : writes the rgb of of rgb value image image rgb image
+Attnndgru : this method is called by the native object directly , as well as scheme , appends at or equal to .
+NeuralCodeSum :in the requirements of a line , indefinitely the image out to the printout . < p > this was not in this method , but was added afterwards by dennis miller miller . < p > should exactly the image is positioned on the right side of the paper
+Code2seq : draws a new image
+Hybrid-DRL: calculate the background of the given component
+Ast-attendgru: draw a from
+CodeASTNN : add a graphic to the workspace . < p > simultaneously was not in the original class , but was added afterwards by bob jacobsen . modified by d miller . < p > the image is positioned on the right side of the paper , at the current height
+CASTS  : write a graphic to the printout . < p > this was not in the original class , but was added afterwards by bob jacobsen . modified by d miller . < p > the image is positioned on the right side of the paper , at the current height
+---------------------------------------Id: 5
+ code 
+ protected void create_y_axis(int i){
+  Log.e("index vlaue",i + "");
+  float ver_height=((graphheight / label_size) * i) + border;
+  if (i == largest_value_set.size() - 1)   canvas.drawLine(horstart,ver_height,width - (border),ver_height,paint);
+ else   canvas.drawLine(horstart,ver_height,border,ver_height,paint);
+  paint.setColor(Color.BLACK);
+  int Y_labels=(int)size - 1 - i;
+  String y_labels=String.format("%.1f",Y_labels * y_axis_ratio);
+  paint.setTextAlign(Paint.Align.RIGHT);
+  canvas.drawText(y_labels,horstart - 15,ver_height - 10,paint);
+  paint.setTextAlign(Paint.Align.LEFT);
+}
+Ground Truth: this function is used to plot the y axis and its breakdown with value . uses drawline ( ) method to create the y axis and lines to show breakdown of y axis and drawtext ( ) method to plot labels related with breakdowns 
+Code-NN : draws the plots scaled ' plot label y axis . . labels given axis axis axis - -
+H-Deepcom : fills method the the cell the vertical vertical for size for . . . . to to to to to the the the the and and
+Attnndgru : process a small color actions on the left side of the disable of the disable labels
+NeuralCodeSum :this function is used to create labels and lines with value
+Code2seq : draws the text for the given
+Hybrid-DRL: this function is used to create a component
+Ast-attendgru: create the plot axis and .
+CodeASTNN : this function is used to plot the y axis and drawtext and drawtext ( ) method to create breakdown with y axis and drawtext ( )
+CASTS  : this function is used to plot the y axis and its breakdown with value . uses drawline ( ) method to create the y axis and lines to show breakdown of y axis and drawtext ( ) method to plot labels related with breakdowns
+---------------------------------------Id: 6
+ code 
+ private FileChannel updateCache(String filePath){
+  FileChannel fileChannel=fileNameAndStreamCache.get(filePath);
+  try {
+    if (null == fileChannel) {
+      FileInputStream stream=new FileInputStream(filePath);
+      fileChannel=stream.getChannel();
+      fileNameAndStreamCache.put(filePath,fileChannel);
+    }
+  }
+ catch (  IOException e) {
+    LOGGER.error(e,e.getMessage());
+  }
+  return fileChannel;
+}
+Ground Truth: this method will be used to check whether stream is already present in cache or not for filepath if not present then create it and then add to cache , other wise get from cache 
+Code-NN : creates method cache the a to entity is corresponding to to the the which in we working filepath cache cache . . . if will will will will cache cache wise
+H-Deepcom : this method will ' used it it it not not not not present present not not not not cache cache cache cache cache cache cache cache cache cache cache cache cache cache cache cache cache cache cache cache cache cache cache cache cache is is is is is is
+Attnndgru : this function will read the cache into a file that reads the head of the quorum .
+NeuralCodeSum :this method will be used to check whether cache is already present in cache or not for filepath if not present then create it and then add to cache
+Code2seq : saves the contents of the file
+Hybrid-DRL: this method will be used to read a stream of file
+Ast-attendgru: this method will be used to check for file channel with cache
+CodeASTNN : this method will be used to check whether stream is already present in cache or not for filepath if not present then create new one
+CASTS  : this method will be used to check whether stream is already present in cache or not for filepath if not present then create it and then add to cache , other wise get from cache
+---------------------------------------Id: 7
+ code 
+ private float calculateSelectorRadius(){
+  if (mfSelectorRadius == 0.0f) {
+    int nHeight=mSelectedView.getHeight();
+    int nWidth=mSelectedView.getWidth();
+    int nLargerSide=Math.max(nWidth,nHeight);
+    mfSelectorRadius=((nLargerSide ^ 2) / 2);
+  }
+  return mfSelectorRadius;
+}
+Ground Truth: calculate selector radius the selector radius can be calculated by a simple math calculation of the larger side . 
+Code-NN : calculate selector radius of selector radius on be calculated . . . math calculation the the larger side side
+H-Deepcom : calculate selector radius on selector radius can can calculated calculated on calculation on
+Attnndgru : calculate selector radius the selector radius can be calculated by a simple screen .
+NeuralCodeSum :calculates a simple math math radius radius can be calculated by a math math .
+Code2seq : calculate the normalized scale of the
+Hybrid-DRL: calculate the current state of the current state
+Ast-attendgru: calculate selector radius the selector radius can be calculated by a simple math calculation of the larger than the .
+CodeASTNN : calculate selector radius the simple selector radius can be calculated by a simple math of the larger side of the larger selector .
+CASTS  : calculate selector radius the selector radius can be calculated by a simple math calculation of the larger side .
+---------------------------------------Id: 8
+ code 
+ public static void slideInFromTopAnimator(@NonNull List<Animator> animators,@NonNull View view,RecyclerView recyclerView){
+  alphaAnimator(animators,view,0f);
+  animators.add(ObjectAnimator.ofFloat(view,"translationY",-recyclerView.getMeasuredHeight() >> 1,0));
+  if (FlexibleAdapter.DEBUG)   Log.v(TAG,"Added TOP Animator");
+}
+Ground Truth: item will slide from top of the screen to its natural position . 
+Code-NN : report will slide representation bottom of the screen to . natural . . the the the . the
+H-Deepcom : this the in the triangle the the the to to . . . . keep .
+Attnndgru : this method is called from ( ) when ( int ) , this will only called at debug ( ) , even if the view is not null !
+NeuralCodeSum :slide the item from the top of the screen to the screen . < p / > this works around the item position .
+Code2seq : add a view to the end
+Hybrid-DRL: item moves a view to starts the animations that will be drawn
+Ast-attendgru: keeps the specified view with the given ordering . < p > < p > < p > < p > < p > < p > < p > < p > < p > < p > < p > < p > < p > <
+CodeASTNN : item will slide to the natural position of the screen .
+CASTS  : item will slide from bottom of the screen to its natural position .
+---------------------------------------Id: 9
+ code 
+ @RequestMapping(value="/SAML2/IDPSSO/{tenant:.*}") public void ssoBindingError(Locale locale,@PathVariable(value="tenant") String tenant,HttpServletResponse response) throws IOException {
+  logger.info("IDP SSO binding error! The client locale is " + locale.toString() + ", tenant is "+ tenant);
+  ssoDefaultTenantError(locale,response);
+}
+Ground Truth: handle request sent with a wrong binding 
+Code-NN : handle a a for . wrong binding element . specified to the is request request .
+H-Deepcom : handle request counter seen binding binding binding binding invalid invalid invalid
+Attnndgru : handle the definition function details
+NeuralCodeSum :handle request sent with the default binding
+Code2seq : this method calls the request to
+Hybrid-DRL: handle a new entry to the request
+Ast-attendgru: grab display about a new collection and its causes when needed .
+CodeASTNN : handle request sent with default tenant
+CASTS  : handle request sent with a wrong binding
+---------------------------------------Id: 10
+ code 
+ private void paintForegroundEnabled(Graphics2D g,int width,int height){
+  Shape s=decodeArrowPath(width,height);
+  g.setPaint(enabledColor);
+  g.fill(s);
+}
+Ground Truth: paint the arrow in enabled state . 
+Code-NN : paint the for image a s a an color of image a a color color color color centered color color color .
+H-Deepcom : paint the arrow component enabled . black black background black a . .
+Attnndgru : paint button in a paint with a frequency button .
+NeuralCodeSum :paint the arrow in the list of arrow state .
+Code2seq : draws the given shape
+Hybrid-DRL: paint the state of the view
+Ast-attendgru: paint the foreground or disabled labels .
+CodeASTNN : paint the arrow in pressed state .
+CASTS  : paint the arrow in enabled state .
+---------------------------------------Id: 11
+ code 
+ public void add(int position,@NonNull T item){
+synchronized (lock) {
+    if (items == null) {
+      items=new ArrayList<>();
+    }
+    items.add(position,item);
+  }
+  if (notifyOnChange) {
+    notifyItemInserted(position);
+  }
+}
+Ground Truth: adds the specified item to the list with the specified position 
+Code-NN : add the item with the the end inserts the the list list
+H-Deepcom : adds a given item to the adapter of the the .
+Attnndgru : insert the item at the position if currently set .
+NeuralCodeSum :inserts the specified item at the specified position in the list .
+Code2seq : adds a new item to the
+Hybrid-DRL: adds a new item to the list
+Ast-attendgru: adds an item to the history . if the list is empty , it will be sent to the market .
+CodeASTNN : inserts the specified item at the specified position of the list .
+CASTS  : adds the specified item to the array ' s list .
+---------------------------------------Id: 12
+ code 
+ public boolean verifyServerEvidenceMessage(BigInteger serverM2) throws CryptoException {
+  if ((this.A == null) || (this.M1 == null) || (this.S == null)) {
+    throw new CryptoException("Impossible to compute and verify M2: " + "some data are missing from the previous operations (A,M1,S)");
+  }
+  BigInteger computedM2=SRP6Util.calculateM2(digest,N,A,M1,S);
+  if (computedM2.equals(serverM2)) {
+    this.M2=serverM2;
+    return true;
+  }
+  return false;
+}
+Ground Truth: authenticates the server evidence message m2 received and saves it only if correct . 
+Code-NN : creates the new test define
+H-Deepcom : authenticates the new message as m1 the the : : : : : : messages : : : before before .
+Attnndgru : verify the client evidence server against an ip .
+NeuralCodeSum :authenticates the received client message m1 and saves it .
+Code2seq : check if the server is a
+Hybrid-DRL: returns true if the key is a new
+Ast-attendgru: authenticates to server in a .
+CodeASTNN : here we preserve the 2063 message and server doclet it .
+CASTS  : checks the received server evidence message m1 and saves it only if correct .
+---------------------------------------Id: 13
+ code 
+ public Metadata.Property.Builder clear(){
+  Metadata_Property_Builder _defaults=new Metadata.Property.Builder();
+  type=_defaults.type;
+  boxedType=_defaults.boxedType;
+  name=_defaults.name;
+  capitalizedName=_defaults.capitalizedName;
+  allCapsName=_defaults.allCapsName;
+  getterName=_defaults.getterName;
+  codeGenerator=_defaults.codeGenerator;
+  fullyCheckedCast=_defaults.fullyCheckedCast;
+  accessorAnnotations.clear();
+  _unsetProperties.clear();
+  _unsetProperties.addAll(_defaults._unsetProperties);
+  return (Metadata.Property.Builder)this;
+}
+Ground Truth: resets the state of this builder . 
+Code-NN : checks the space properties a the the apk hierarchy . together validate name address the the the of of of of of of of media media media media replacement replacement . . . . . cause cause cause cause cause cause cause cause cause of of of of of
+H-Deepcom : resets the node from from removes . .
+Attnndgru : remove the objects for the given task types .
+NeuralCodeSum :clears the state of this builder , allowing a mysql state .
+Code2seq : removes all the elements from the
+Hybrid-DRL: removes all the values from the list
+Ast-attendgru: allow the to provide the specified observe state .
+CodeASTNN : resets the state of the given formatting .
+CASTS  : resets the state of this builder .
+---------------------------------------Id: 14
+ code 
+ private void loadWorkflow(Properties ctx,int AD_Workflow_ID,HttpSession sess){
+  MWorkflow wf=new MWorkflow(ctx,AD_Workflow_ID,null);
+  MWFNode[] nodes=wf.getNodes(true,Env.getContextAsInt(ctx,"#AD_Client_ID"));
+  MWFNode wfn=null;
+  ArrayList nodes_ID=new ArrayList();
+  for (int i=0; i < nodes.length; i++) {
+    wfn=nodes[i];
+    nodes_ID.add(new Integer(wfn.getAD_WF_Node_ID()));
+  }
+  int imageMap[][]=generateImageMap(nodes_ID);
+  sess.setAttribute(WORKFLOW,wf);
+  sess.setAttribute(NODES,nodes);
+  sess.setAttribute(NODES_ID,nodes_ID);
+  sess.setAttribute(IMAGE_MAP,imageMap);
+  sess.setAttribute(ACTIVE_NODE,new Integer(-999));
+}
+Ground Truth: load workflw and initialize the session attributes . 
+Code-NN : load / and . the session . .
+H-Deepcom : load the initialize the session attributes attributes
+Attnndgru : load from a workflow after a background method
+NeuralCodeSum :load workflw and initialize workflw and add workflw
+Code2seq : creates a new instance of the
+Hybrid-DRL: compute the <unk>
+Ast-attendgru: load and initialize the session attributes .
+CodeASTNN : load workflw workflw session attributes and initialize the workflw remote session attributes .
+CASTS  : load workflw and initialize the session attributes .
+---------------------------------------Id: 15
+ code 
+ public void hspan(double start,double end,Paint color,String legend){
+  LegendText legendText=new LegendText(color,legend);
+  comments.add(legendText);
+  plotElements.add(new HSpan(start,end,color,legendText));
+}
+Ground Truth: draws a horizontal span into the graph and optionally adds a legend . 
+Code-NN : add the statistics rule of namespace the the optionally horizontal . starting starting starting the
+H-Deepcom : draws a single column the given . partition partition lines lines lines
+Attnndgru : generates text for a symbol with a color
+NeuralCodeSum :draws a vertical rule into the legend .
+Code2seq : add a new text to the
+Hybrid-DRL: start a new <unk>
+Ast-attendgru: draws a line of range .
+CodeASTNN : draws a horizontal color .
+CASTS  : draws a horizontal rule into the graph and optionally adds a legend .
+---------------------------------------Id: 16
+ code 
+ @Override public void addRelations(Task task,Iterable<ObjectId> projectIds,String fieldName){
+  List<Project> newProjectList=new LinkedList<>();
+  Iterable<Project> projectsToAdd=projectRepository.findAll(projectIds,null);
+  for (  Project project : projectsToAdd) {
+    newProjectList.add(project);
+  }
+  try {
+    if (PropertyUtils.getProperty(task,fieldName) != null) {
+      Iterable<Project> projects=(Iterable<Project>)PropertyUtils.getProperty(task,fieldName);
+      for (      Project project : projects) {
+        newProjectList.add(project);
+      }
+    }
+  }
+ catch (  Exception e) {
+    throw new RuntimeException(e);
+  }
+  try {
+    PropertyUtils.setProperty(task,fieldName,newProjectList);
+  }
+ catch (  Exception e) {
+    throw new RuntimeException(e);
+  }
+  taskRepository.save(task);
+}
+Ground Truth: a simple implementation of the addrelations method which presents the general concept of the method . it should not be used in production because of possible race condition - production ready code should perform an atomic operation . 
+Code-NN : pull simple project into project project project project project project
+H-Deepcom : add a default of to a service . . . . the a a a . . . . . . . . . . . . . . . . . . . to to were were were were were were were were . . . . .
+Attnndgru : adds the specified bean to the choices , populating unused information known for the associated tag .
+NeuralCodeSum :a simple implementation of the addrelations method should perform an atomic projects . it should not be used in production because the general - production production code should perform any of the general method .
+Code2seq : adds a list of the given
+Hybrid-DRL: check if the task is a new
+Ast-attendgru: implementation of the method ' s class implementation .
+CodeASTNN : a utility method which allows the general project of the addrelations - concept method where addrelations general general support for the general project .
+CASTS  : a simple implementation of the addrelations method which presents the general concept of the method . it should not be used in production because of possible race condition - production ready code should perform an atomic operation .
+---------------------------------------Id: 17
+ code 
+ private void stretchViewVertically(View view,int crossSize){
+  LayoutParams lp=(LayoutParams)view.getLayoutParams();
+  int newHeight=crossSize - lp.topMargin - lp.bottomMargin;
+  newHeight=Math.max(newHeight,0);
+  view.measure(MeasureSpec.makeMeasureSpec(view.getMeasuredWidth(),MeasureSpec.EXACTLY),MeasureSpec.makeMeasureSpec(newHeight,MeasureSpec.EXACTLY));
+}
+Ground Truth: expand the view vertically to the size of the crosssize ( considering the view margins ) 
+Code-NN : stores the progress well to year height in on held fit ' ui view margins the
+H-Deepcom : called the the given the the size the the the the the
+Attnndgru : expand a horizontally and a view to increase the initial width and calculating the bounding view should have higher
+NeuralCodeSum :expand the view horizontally to the size of the crosssize that will be incremented
+Code2seq : calculates the view for the view
+Hybrid-DRL: expand a view to the text area
+Ast-attendgru: the method where the original background size is generated at all on scrolling .
+CodeASTNN : expand the view horizontally
+CASTS  : expand the view horizontally to the size of the crosssize ( considering the view margins )
+---------------------------------------Id: 18
+ code 
+ private Collection<Var> migrateColumns(SQLTable currentTable){
+  List<Var> vars=new ArrayList<>();
+  String tableType=currentTable.getEntityType();
+  Map<String,ResourceType.DataType> columns=currentTable.getColumns();
+  Map<String,String> foreignColumns=currentTable.getForeignKeyColumns();
+  for (  String column : columns.keySet()) {
+    ResourceType.DataType columnType=columns.get(column);
+    if (foreignColumns.containsKey(column)) {
+      vars.addAll(migrateAsRelation(tableType,column,foreignColumns.get(column)));
+    }
+ else {
+      vars.addAll(migrateAsResource(tableType,columnType,column));
+    }
+  }
+  return vars;
+}
+Ground Truth: loop through each of the columns in the given table , migrating each as a resource or relation . 
+Code-NN : returns a foreign - of columns the
+H-Deepcom : loop total columns of of column the the , , , column having . column .
+Attnndgru : executes the function , including the java attributes from all columns rules found ( emoji - i - 1 ) where this query should be used to pick all edges to sparse data
+NeuralCodeSum :migrate the columns of a table in the given resource query .
+Code2seq : returns the list of the given
+Hybrid-DRL: finds a set of rows in a table
+Ast-attendgru: maps a list to the table
+CodeASTNN : determines if the columns have tender_no , or resource as the columns in each resource , columns are schedulerstatemanageradaptor .
+CASTS  : loop through each of the columns in the table , migrating each as a resource or relation .
+---------------------------------------Id: 19
+ code 
+ protected Workflow.Method createRemoveVolumesFromCGMethod(URI vplexURI,URI cgURI,List<URI> vplexVolumeURIs){
+  return new Workflow.Method(REMOVE_VOLUMES_FROM_CG_STEP,vplexURI,cgURI,vplexVolumeURIs);
+}
+Ground Truth: a method that creates the workflow method for removing vplex volumes from a consistency group . 
+Code-NN : a method object the the the the remain vplex creates the
+H-Deepcom : this method provided creates the method method consistency consistency consistency consistency consistency
+Attnndgru : create project for workflow method
+NeuralCodeSum :a method the creates the workflow method for adding a vplex vplex volumes to a vplex consistency group .
+Code2seq : remove a workflow from the given
+Hybrid-DRL: a method to add the given method
+Ast-attendgru: returns the new vplex storage by the passed path the vplex connection .
+CodeASTNN : a method the creates the workflow method for adding vplex volumes to a vplex consistency group natively volumes .
+CASTS  : a method that creates the workflow method for adding vplex volumes to a consistency group .
+---------------------------------------Id: 20
+ code 
+ public synchronized String generateCallIdentifier(String address){
+  String date=Long.toString(System.currentTimeMillis() + callIDCounter++ + rand.nextLong());
+  byte cid[]=digester.digest(date.getBytes());
+  String cidString=Utils.toHexString(cid);
+  return cidString + "@" + address;
+}
+Ground Truth: generate a call identifier . this is useful when we want to generate a call identifier in advance of generating a message . 
+Code-NN : generates a string made of a a . url expect have the call a a call if in advance a a a a a sorts sorts sorts sorts sorts a a
+H-Deepcom : push an returns with server the the the the the . . .
+Attnndgru : try to generate parse string identifier .
+NeuralCodeSum :generate a unique identifier .
+Code2seq : returns a string representation of the
+Hybrid-DRL: generates a string representation of the address
+Ast-attendgru: generate identifier with random certificate
+CodeASTNN : generate a call in this to generate a summary string in tail .
+CASTS  : generate a call identifier . this is useful when we want to generate a call identifier in advance of generating a message .
+---------------------------------------Id: 21
+ code 
+ public void move(MouseEvent e){
+  Point2D pnt=getProjectionPoint(e);
+  int x=(int)pnt.getX();
+  int y=(int)pnt.getY();
+  if (poly.getRenderType() == OMGraphic.RENDERTYPE_OFFSET) {
+    gpm=new OffsetGrabPoint(x,y);
+    gpm.clear();
+  }
+ else {
+    gpm=gpo;
+    gpm.clear();
+    gpm.set(x,y);
+  }
+  addPolyGrabPointsToOGP(gpm);
+  movingPoint=gpm;
+}
+Ground Truth: called to set the offsetgrabpoint to the current mouse location , and update the offsetgrabpoint with all the other grabpoint locations , so everything can shift smoothly . should also set the offsetgrabpoint to the movingpoint . should be called only once at the beginning of the general movement , in order to set the movingpoint . after that , redraw ( e ) should just be called , and the movingpoint will make the adjustments to the graphic that are needed . 
+Code-NN : moves to offsetgrabpoint forward given forward on . they they the the the the the the times times times place place place times times times times times times times vertices vertices vertices vertices vertices vertices vertices . .
+H-Deepcom : called to set on offsetgrabpoint , , mouse mouse mouse mouse , . . chart chart chart .
+Attnndgru : invoked when the mouse button is dropped .
+NeuralCodeSum :called from the offsetgrabpoint to the offsetgrabpoint , and update the offsetgrabpoint location , so that the offsetgrabpoint menu item should be the first mouse , and update the offsetgrabpoint with the offsetgrabpoint . should also set the offsetgrabpoint to the movingpoint thread . should be called only when the
+Code2seq : this method called to called when
+Hybrid-DRL: moves the mouse event to the location
+Ast-attendgru: move mouse mouse left to right . this moves the graphic to the left of the thumb relative to the origin of the 3d area by the x and y set of the top left and ending point . < p / > this is not guaranteed to go
+CodeASTNN : called to set the offsetgrabpoint to the offsetgrabpoint , so it can shift the offsetgrabpoint of the offsetgrabpoint . should be called at the current location . once the offsetgrabpoint is first . if the movingpoint is going to set the offsetgrabpoint is locations , the current mouse is removed
+CASTS  : called to set the offsetgrabpoint to the current mouse location , and update the offsetgrabpoint with all the other grabpoint locations , so everything can shift smoothly . should also set the offsetgrabpoint to the movingpoint . should be called only once at the beginning of the general movement ,
+---------------------------------------Id: 22
+ code 
+ @Override public SSLEngineResult wrap(ByteBuffer[] srcs,int offset,int len,ByteBuffer dst) throws SSLException {
+  if (engine_was_shutteddown) {
+    return new SSLEngineResult(SSLEngineResult.Status.CLOSED,SSLEngineResult.HandshakeStatus.NOT_HANDSHAKING,0,0);
+  }
+  if ((srcs == null) || (dst == null)) {
+    throw new IllegalStateException("Some of the input parameters are null");
+  }
+  if (dst.isReadOnly()) {
+    throw new ReadOnlyBufferException();
+  }
+  if (!handshake_started) {
+    beginHandshake();
+  }
+  SSLEngineResult.HandshakeStatus handshakeStatus=getHandshakeStatus();
+  if ((session == null || engine_was_closed) && (handshakeStatus.equals(SSLEngineResult.HandshakeStatus.NEED_UNWRAP) || handshakeStatus.equals(SSLEngineResult.HandshakeStatus.NEED_TASK))) {
+    return new SSLEngineResult(getEngineStatus(),handshakeStatus,0,0);
+  }
+  int capacity=dst.remaining();
+  int produced=0;
+  if (alertProtocol.hasAlert()) {
+    if (capacity < recordProtocol.getRecordSize(2)) {
+      return new SSLEngineResult(SSLEngineResult.Status.BUFFER_OVERFLOW,handshakeStatus,0,0);
+    }
+    byte[] alert_data=alertProtocol.wrap();
+    dst.put(alert_data);
+    if (alertProtocol.isFatalAlert()) {
+      alertProtocol.setProcessed();
+      if (session != null) {
+        session.invalidate();
+      }
+      shutdown();
+      return new SSLEngineResult(SSLEngineResult.Status.CLOSED,SSLEngineResult.HandshakeStatus.NOT_HANDSHAKING,0,alert_data.length);
+    }
+ else {
+      alertProtocol.setProcessed();
+      if (close_notify_was_sent && close_notify_was_received) {
+        shutdown();
+        return new SSLEngineResult(SSLEngineResult.Status.CLOSED,SSLEngineResult.HandshakeStatus.NOT_HANDSHAKING,0,alert_data.length);
+      }
+      return new SSLEngineResult(getEngineStatus(),getHandshakeStatus(),0,alert_data.length);
+    }
+  }
+  if (capacity < recordProtocol.getMinRecordSize()) {
+    if (logger != null) {
+      logger.println("Capacity of the destination(" + capacity + ") < MIN_PACKET_SIZE("+ recordProtocol.getMinRecordSize()+ ")");
+    }
+    return new SSLEngineResult(SSLEngineResult.Status.BUFFER_OVERFLOW,handshakeStatus,0,0);
+  }
+  try {
+    if (!handshakeStatus.equals(SSLEngineResult.HandshakeStatus.NEED_WRAP)) {
+      dataStream.setSourceBuffers(srcs,offset,len);
+      if ((capacity < SSLRecordProtocol.MAX_SSL_PACKET_SIZE) && (capacity < recordProtocol.getRecordSize(dataStream.available()))) {
+        if (logger != null) {
+          logger.println("The destination buffer(" + capacity + ") can not take the resulting packet("+ recordProtocol.getRecordSize(dataStream.available())+ ")");
+        }
+        return new SSLEngineResult(SSLEngineResult.Status.BUFFER_OVERFLOW,handshakeStatus,0,0);
+      }
+      if (remaining_wrapped_data == null) {
+        remaining_wrapped_data=recordProtocol.wrap(ContentType.APPLICATION_DATA,dataStream);
+      }
+      if (capacity < remaining_wrapped_data.length) {
+        return new SSLEngineResult(SSLEngineResult.Status.BUFFER_OVERFLOW,handshakeStatus,dataStream.consumed(),0);
+      }
+ else {
+        dst.put(remaining_wrapped_data);
+        produced=remaining_wrapped_data.length;
+        remaining_wrapped_data=null;
+        return new SSLEngineResult(getEngineStatus(),handshakeStatus,dataStream.consumed(),produced);
+      }
+    }
+ else {
+      if (remaining_hsh_data == null) {
+        remaining_hsh_data=handshakeProtocol.wrap();
+      }
+      if (capacity < remaining_hsh_data.length) {
+        return new SSLEngineResult(SSLEngineResult.Status.BUFFER_OVERFLOW,handshakeStatus,0,0);
+      }
+ else {
+        dst.put(remaining_hsh_data);
+        produced=remaining_hsh_data.length;
+        remaining_hsh_data=null;
+        handshakeStatus=handshakeProtocol.getStatus();
+        if (handshakeStatus.equals(SSLEngineResult.HandshakeStatus.FINISHED)) {
+          session=recordProtocol.getSession();
+        }
+      }
+      return new SSLEngineResult(getEngineStatus(),getHandshakeStatus(),0,produced);
+    }
+  }
+ catch (  AlertException e) {
+    alertProtocol.alert(AlertProtocol.FATAL,e.getDescriptionCode());
+    engine_was_closed=true;
+    if (session != null) {
+      session.invalidate();
+    }
+    throw e.getReason();
+  }
+}
+Ground Truth: encodes the application data into ssl / tls record . if handshake status of the engine differs from not_handshaking the operation can work without consuming of the source data . for more information about tls record fragmentation see tls v 1 specification ( http : / / www . ietf . org / rfc / rfc2246 . txt ) p 6 . 2 . 
+Code-NN : encodes the application data engine ssl the tls language view data handshake upload stream . . differs differs the the ' ' work ' work work data data data data . tls tls tls tls tls tls tls tls / / / / / / / / / www
+H-Deepcom : load handshake offset data table ssl data tls the the the saves saves the the the the the the the the the the the the the the the the the the the the the the the the the record record record record record record record record record record record
+Attnndgru : encodes the application data - server
+NeuralCodeSum :encodes the application data into ssl / tls record . tls tls the operation for ssl ssl data . tls the operation of ssl can work be ssl .
+Code2seq : returns the next net engine and
+Hybrid-DRL: reads the ssl socket to an address
+Ast-attendgru: encodes the application data into ssl / tls record for completion .
+CodeASTNN : encodes the application data into ssl / tls record . if handshake status of the engine differs from not_handshaking the application of the source / tls record . for more information about tls record ( http : / / www . w3 . com / tls / tls / tls
+CASTS  : encodes the application data into ssl / tls record . if handshake status of the engine differs from not_handshaking the operation can work without consuming of the source data . for more information about tls record fragmentation see tls v 1 specification ( http : / / www . ietf
+---------------------------------------Id: 23
+ code 
+ public static ParsedSql parseSqlStatement(String sql){
+  Set<String> namedParameters=new HashSet<String>();
+  ParsedSql parsedSql=new ParsedSql(sql);
+  char[] statement=sql.toCharArray();
+  int namedParameterCount=0;
+  int unnamedParameterCount=0;
+  int totalParameterCount=0;
+  int i=0;
+  while (i < statement.length) {
+    int skipToPosition=skipCommentsAndQuotes(statement,i);
+    if (i != skipToPosition) {
+      if (skipToPosition >= statement.length) {
+        break;
+      }
+      i=skipToPosition;
+    }
+    char c=statement[i];
+    if (c == ':' || c == '&') {
+      int j=i + 1;
+      if (j < statement.length && statement[j] == ':' && c == ':') {
+        i=i + 2;
+        continue;
+      }
+      while (j < statement.length && !isParameterSeparator(statement[j])) {
+        j++;
+      }
+      if (j - i > 1) {
+        String parameter=sql.substring(i + 1,j);
+        if (!namedParameters.contains(parameter)) {
+          namedParameters.add(parameter);
+          namedParameterCount++;
+        }
+        parsedSql.addNamedParameter(parameter,i,j);
+        totalParameterCount++;
+      }
+      i=j - 1;
+    }
+ else {
+      if (c == '?') {
+        unnamedParameterCount++;
+        totalParameterCount++;
+      }
+    }
+    i++;
+  }
+  parsedSql.setNamedParameterCount(namedParameterCount);
+  parsedSql.setUnnamedParameterCount(unnamedParameterCount);
+  parsedSql.setTotalParameterCount(totalParameterCount);
+  return parsedSql;
+}
+Ground Truth: parse the sql statement and locate any placeholders or named parameters . named parameters are substituted for a jdbc placeholder . 
+Code-NN : gets the sql statement and locate single placeholders , named parameters parameters
+H-Deepcom : parse placeholder sql statement for the given parameters a
+Attnndgru : parse the request against the sql query string .
+NeuralCodeSum :parse the sql statement and locate any placeholders or named parameters . named parameters are substituted for a jdbc placeholder and an accompanying .
+Code2seq : returns a new string for the
+Hybrid-DRL: returns a string representation of the sql statement
+Ast-attendgru: parse the sql statement and locate random information string .
+CodeASTNN : locate any placeholders or jdbc parameters named placeholders and locate names of jdbc placeholders or named parameters . named and locate any placeholders are jdbc .
+CASTS  : parse the sql statement and locate any placeholders or named parameters . named parameters are substituted for a jdbc placeholder .
+---------------------------------------Id: 24
+ code 
+ public static boolean isAutoNew(Properties ctx,int WindowNo){
+  if (ctx == null)   throw new IllegalArgumentException("Require Context");
+  String s=getContext(ctx,WindowNo,"AutoNew",false);
+  if (s != null) {
+    if (s.equals("Y"))     return true;
+ else     return false;
+  }
+  return isAutoNew(ctx);
+}
+Ground Truth: is window auto new record ( if not set use default ) 
+Code-NN : locates function autocommit ( is is
+H-Deepcom : determine . . . . . .
+Attnndgru : determines whether the stack is flag for the current window .
+NeuralCodeSum :is window new window
+Code2seq : checks if the given resource is
+Hybrid-DRL: check if the given profile is installed
+Ast-attendgru: checks whether the given configuration is available
+CodeASTNN : is new program
+CASTS  : is window autocommit ( if not set use default )
+---------------------------------------Id: 25
+ code 
+ public void addPutTimeNanos(long duration){
+  putTimeNanos.addAndGet(duration);
+  if (delegate != null)   delegate.addPutTimeNanos(duration);
+}
+Ground Truth: increments the put time accumulator . 
+Code-NN : creates a data time accumulator
+H-Deepcom : add the . .
+Attnndgru : adds a delay of the to this instance which is not changed .
+NeuralCodeSum :increments the clock time accumulator .
+Code2seq : adds a new time to the
+Hybrid-DRL: increments the value of the given duration
+Ast-attendgru: add time in seconds to be automatically run later instances
+CodeASTNN : increments remove time accumulator .
+CASTS  : increments the put time accumulator .
+---------------------------------------Id: 26
+ code 
+ private static String padRight(String s,int minLength){
+  return String.format("%1$-" + minLength + "s",s);
+}
+Ground Truth: adds padding to the end of a string with a repeating character if the string ' s length is less than the minimum length 
+Code-NN : converts padding leading edge value of string length of length repeating length length length string the the
+H-Deepcom : adds the to of the the a string a repeating the at at at at the the the the the the the the the the the the the the the the the the the the the the the is is is is is is the is the is is
+Attnndgru : pad a type with a given epsilon ( case str )
+NeuralCodeSum :adds padding to the beginning of the string with spaces if the string ' s length is less than the given length
+Code2seq : converts a string to a string
+Hybrid-DRL: adds a string to the string of the string
+Ast-attendgru: adds a length to the end of the string .
+CodeASTNN : adds padding to the beginning of the string with spaces
+CASTS  : adds padding to the right of a string with a repeating character if the string ' s length is less than the minimum length
+---------------------------------------Id: 27
+ code 
+ public void addListener(final IFilterPanelListener<T> listener){
+  m_listeners.addListener(listener);
+}
+Ground Truth: adds a listener that is notified about changes in the filter . 
+Code-NN : adds a new to . the notified button listeners the is will is .
+H-Deepcom : adds a listener that notified notified notified about in in
+Attnndgru : adds a listener object that is notified about changes .
+NeuralCodeSum :add a listener that is notified about changes in the panel .
+Code2seq : add a listener to be notified
+Hybrid-DRL: adds a listener to the list of listeners
+Ast-attendgru: adds a listener that will be notified of close drawer of an existing or update of the data .
+CodeASTNN : adds a listener to the list of listeners
+CASTS  : adds a listener that is notified about changes in the panel .
+---------------------------------------Id: 28
+ code 
+ public static boolean isFileURL(URL url){
+  String protocol=url.getProtocol();
+  return (URL_PROTOCOL_FILE.equals(protocol) || URL_PROTOCOL_VFSFILE.equals(protocol) || URL_PROTOCOL_VFS.equals(protocol));
+}
+Ground Truth: determine whether the given url points to a resource in the file system , that is , has protocol " file " , " vfsfile " or " vfs " . 
+Code-NN : returns if the given url and file file resource the the and the the the , , , , " " " " " " " . . . . . . . . compared compared compared compared compared compared compared compared compared compared compared compared compared compared that
+H-Deepcom : returns true the url is path to url , file file , , , , , file file file " " " " " " " " " " "
+Attnndgru : determine whether the given url points to a resource in the current url string .
+NeuralCodeSum :determine whether the given url points to a resource in the file system , that " vfs " , " file " , " vfsfile " .
+Code2seq : checks if the url is the
+Hybrid-DRL: check if the given url is a protocol
+Ast-attendgru: determine whether the given url points to a resource in the file system , that is , has protocol the specified file .
+CodeASTNN : determine whether the given url points to a resource in the file system , that is , has protocol " file " vfs " .
+CASTS  : determine whether the given url points to a resource in the file system , that is , has protocol " file " , " vfsfile " or " vfs " .
+---------------------------------------Id: 29
+ code 
+ private static InputStream nullInputStream() throws NullPointerException {
+  if (currentTimeMillis() > 0) {
+    return null;
+  }
+  throw new NullPointerException();
+}
+Ground Truth: the following two methods exist because in , out , and err must be initialized to null . the compiler , however , cannot be permitted to inline access to them , since they are later set to more sensible values by initializesystemclass ( ) . 
+Code-NN : returns a default at . buffer for a
+H-Deepcom : convert stream take return returning , , , , , err err err err err stream . stream stream stream stream stream stream stream stream stream stream stream stream stream stream stream stream stream stream stream stream stream stream stream . . .
+Attnndgru : the following two methods exist because we have to use that ( ) , ( ) , ( ) ) and then system . will be invoked in the input stream , if still system running creation time .
+NeuralCodeSum :the following methods checks , however , and err , or err , clear , err ,
+Code2seq : read the next stream from the
+Hybrid-DRL: returns the input stream of the input stream
+Ast-attendgru: the following two methods members through files .
+CodeASTNN : the err function to two methods in the same time , since later access to them , and permitted to err err .
+CASTS  : the following two methods exist because in , out , and err must be initialized to null . the compiler , however , cannot be permitted to inline access to them , since they are later set to more sensible values by initializesystemclass ( ) .
+---------------------------------------Id: 30
+ code 
+ public static void printLine(Object message){
+  if (!isDisabled()) {
+    printLine(String.valueOf(message));
+  }
+}
+Ground Truth: prints the message passed as a non - string object and a new line . 
+Code-NN : enable the position message representation of message either either that . . . line message ident line
+H-Deepcom : print line line message . debugging t t print it it . . . .
+Attnndgru : prints the value of the given object as it as a dot
+NeuralCodeSum :prints a line to the output stream .
+Code2seq : prints the message to the output
+Hybrid-DRL: prints the message to the default
+Ast-attendgru: prints the given line string .
+CodeASTNN : prints the message and a new line object .
+CASTS  : prints the message passed as a non - string object .
+---------------------------------------Id: 31
+ code 
+ public void accumulate(TaggedLogAPIEntity entity) throws Exception {
+  AggregateAPIEntity current=root;
+  for (  String groupby : groupbys) {
+    String tagv=locateGroupbyField(groupby,entity);
+    if (tagv == null || tagv.isEmpty()) {
+      tagv=UNASSIGNED_GROUPBY_ROOT_FIELD_NAME;
+    }
+    Map<String,AggregateAPIEntity> children=current.getEntityList();
+    if (children.get(tagv) == null) {
+      children.put(tagv,factory.create());
+      current.setNumDirectDescendants(current.getNumDirectDescendants() + 1);
+    }
+    AggregateAPIEntity child=children.get(tagv);
+    if (counting)     count(child);
+    for (    String sumFunctionField : sumFunctionFields) {
+      sum(child,entity,sumFunctionField);
+    }
+    current=child;
+  }
+}
+Ground Truth: currently only group by tags groupbys ' first item always is site , which is a reserved field 
+Code-NN : currently the group entity tags . ' of exists always attributes site which which is aggregate reserved reserved reserved a
+H-Deepcom : tell only group nodes ) , view the the the the ' is reserved reserved reserved reserved reserved . . . reserved reserved reserved is . . . . . . . . . . . .
+Attnndgru : currently only group by tags url get again .
+NeuralCodeSum :currently only group by tags groupbys ' first item always is site groupbys
+Code2seq : checks if the given entity entity
+Hybrid-DRL: test the entity
+Ast-attendgru: currently managed an entity instance from e . g . " " information . $ tuple in the contexts for which one field is requested .
+CodeASTNN : currently only group by groupbys groupbys tags
+CASTS  : currently only group by tags groupbys ' first item always is site , which is a reserved field
+---------------------------------------Id: 32
+ code 
+ @Override public void refreshUsersOrGroupsListFromServer(){
+  showLoadingDialog(getString(R.string.common_loading));
+  GetShareWithUsersAsyncTask getTask=new GetShareWithUsersAsyncTask(this);
+  Object[] params={getFile(),getAccount(),getStorageManager()};
+  getTask.execute(params);
+}
+Ground Truth: get users and groups from the server to fill in the " share with " list 
+Code-NN : call users new in from the share and a information and share share " of the
+H-Deepcom : returns all groups the the fill fill in share share share share share
+Attnndgru : get users and groups from the server to fill in the dictionary that were * de changed changes from the exported definition
+NeuralCodeSum :get users from the server with users in the " share " list and " share with users .
+Code2seq : this method is called when the
+Hybrid-DRL: this method is used to execute a file
+Ast-attendgru: no - op if there are details selected in the experiment
+CodeASTNN : fill " share " and groups to groups in the server with " share " list
+CASTS  : get users and groups from the server to fill in the " share with " list
+---------------------------------------Id: 33
+ code 
+ @Override public void parse(InputStream in,String baseURI) throws IOException, RDFParseException, RDFHandlerException {
+  if (in == null) {
+    throw new IllegalArgumentException("Input stream cannot be 'null'");
+  }
+  if (baseURI == null) {
+    throw new IllegalArgumentException("Base URI cannot be 'null'");
+  }
+  InputSource inputSource=new InputSource(new BOMInputStream(in,false));
+  inputSource.setSystemId(baseURI);
+  parse(inputSource);
+}
+Ground Truth: parses the data from the supplied inputstream , using the supplied baseuri to resolve any relative uri references . 
+Code-NN : parses the of the inputstream using an for the creating baseuri url the generic generic be generic equivalent uri uri uri uri uri now .
+H-Deepcom : parses a main the xml xml xml . for for for for for a ( ( calls calls calls calls calls calls calls calls ( ( ( ( ( ( ) ) ) ) ) ) . .
+Attnndgru : compile a value and appends it to xml stream and store any value children which are for non - and the exception of failure process .
+NeuralCodeSum :parses the data from the supplied inputstream , using the supplied baseuri references as uri .
+Code2seq : parses the http response from the
+Hybrid-DRL: parses the input stream from the given input stream
+Ast-attendgru: parses the specified information from the supplied inputstream . uri it is parsed to handle the data from this string is representing the parser .
+CodeASTNN : parses the data from the supplied inputstream , using the supplied baseuri to resolve any relative uri references before
+CASTS  : parses the data from the supplied inputstream , using the supplied baseuri to resolve any relative uri references .
+---------------------------------------Id: 34
+ code 
+ public ResourcesPoet addTypedArray(String name,@NotNull List<String> values){
+  Element element=document.createElement("array");
+  element.setAttribute("name",name);
+  for (  String value : values) {
+    Element valueElement=document.createElement("item");
+    valueElement.appendChild(document.createTextNode(value));
+    element.appendChild(valueElement);
+  }
+  resourceElement.appendChild(element);
+  return this;
+}
+Ground Truth: add a typed array to the config 
+Code-NN : creates an of the config config
+H-Deepcom : adds the elements of the config
+Attnndgru : add a . the name of the options compared to the provided name .
+NeuralCodeSum :add an integer array to the config
+Code2seq : creates a new element for the
+Hybrid-DRL: add a list of values to the config
+Ast-attendgru: add an array of values to the config
+CodeASTNN : add an array of config
+CASTS  : add a string array to the config
+---------------------------------------Id: 35
+ code 
+ @Override public String toString(){
+  StringBuffer BfString=new StringBuffer();
+  BfString.append("\tAttribute ranking.\n");
+  if (m_starting != null) {
+    BfString.append("\tIgnored attributes: ");
+    BfString.append(startSetToString());
+    BfString.append("\n");
+  }
+  if (m_threshold != -Double.MAX_VALUE) {
+    BfString.append("\tThreshold for discarding attributes: " + Utils.doubleToString(m_threshold,8,4) + "\n");
+  }
+  return BfString.toString();
+}
+Ground Truth: returns a description of the search as a string 
+Code-NN : returns a program of of payload
+H-Deepcom : returns the print representation of the , this this .
+Attnndgru : returns a string representation of this format string . yes , if this call is .
+NeuralCodeSum :returns a description of the threshold as a string
+Code2seq : returns a string representation of this
+Hybrid-DRL: returns a string representation of this predictor
+Ast-attendgru: returns a string representation of this estimator
+CodeASTNN : returns a description of the classifier as a string
+CASTS  : returns a description of the search as a string
+---------------------------------------Id: 36
+ code 
+ private boolean startsWithSpace(String str){
+  return str.length() != 0 && str.charAt(0) == ' ';
+}
+Ground Truth: checks if the string starts with a space character , false if the string is empty or starts with a non - space character . 
+Code-NN : returns if the the starts is the the the the slash slashes slashes
+H-Deepcom : check if a builder starts a a ' ' ' ' isn isn isn isn isn isn isn isn isn isn isn isn isn isn isn . isn
+Attnndgru : gets the if value has a nested keyword .
+NeuralCodeSum :check if the string starts with a space character , false if the string is empty or is not a space
+Code2seq : checks if the string is a
+Hybrid-DRL: returns true if the string is a valid string
+Ast-attendgru: checks if the string ends with an space character .
+CodeASTNN : checks if the string ends with a real number
+CASTS  : checks if the string starts with a space character , false if the string is empty or starts with a non - space character
+---------------------------------------Id: 37
+ code 
+ public boolean mouseDragged(MouseEvent e){
+  if (grabbed_plot_graphics_) {
+    int x=e.getX();
+    int y=e.getY();
+    int dx=x - prevX;
+    int dy=y - prevY;
+    plotX+=dx;
+    plotY+=dy;
+    prevX=x;
+    prevY=y;
+    graph.resize(plotX,plotY,plotWidth,plotHeight);
+    OMGraphicList plotGraphics=graph.getPlotGraphics();
+    plotGraphics.generate(getProjection(),true);
+    repaint();
+  }
+  return false;
+}
+Ground Truth: called whenever the mouse is dragged on this layer and one of the requested mouse modes is active . 
+Code-NN : compute the mark , . position image point the the a point point the the the . . . . . . . .
+H-Deepcom : set the mouse mouse whether rectangle mouse mouse mouse mouse pressed pressed
+Attnndgru : 
+NeuralCodeSum :if the user is one box of the box , the box will be placed to the map , is unexpected the user of the box .
+Code2seq : this method is called to the
+Hybrid-DRL: returns true if the mouse is a mouse event
+Ast-attendgru: called when a mouse button is being made with the horizontal location .
+CodeASTNN : 41e the mouse is pressed for the requested mouse event .
+CASTS  : called whenever the mouse is pressed by the user and one of the requested mouse modes is active .
+---------------------------------------Id: 38
+ code 
+ public synchronized int exportObject(String name,Object obj) throws CannotCompileException {
+  Class clazz=obj.getClass();
+  ExportedObject eo=new ExportedObject();
+  eo.object=obj;
+  eo.methods=clazz.getMethods();
+  exportedObjects.addElement(eo);
+  eo.identifier=exportedObjects.size() - 1;
+  if (name != null)   exportedNames.put(name,eo);
+  try {
+    stubGen.makeProxyClass(clazz);
+  }
+ catch (  NotFoundException e) {
+    throw new CannotCompileException(e);
+  }
+  return eo.identifier;
+}
+Ground Truth: exports an object . this method produces the bytecode of the proxy class used to access the exported object . a remote applet can load the proxy class and call a method on the exported object . 
+Code-NN : exports an object class field the produces the bytecode the the proxy class . . method the exported class . call proxy proxy proxy proxy find find proxy proxy proxy call call the the the the the the the the packages the packages packages packages packages the the the
+H-Deepcom : exports an object . this method proxy the the proxy the proxy proxy to to ' be the be be be the the the the the the the the the the the the the proxy proxy the exported . . . . . . . . . . .
+Attnndgru : exports an object . this method produces the bytecode of the proxy class with all the given object exported in the array .
+NeuralCodeSum :exports an object to a remote object . this method produces the proxy class and call its own bytecode of the proxy class . a remote proxy class can load non - proxy object . a remote applet on the exported object .
+Code2seq : adds a new object to the
+Hybrid-DRL: create a method from the given object
+Ast-attendgru: exports an object . this method produces a that was accessed when using json object and may then invoke the underlying table .
+CodeASTNN : exports an object . produces a remote class used to produces the proxy object . the proxy class cannot be used .
+CASTS  : exports an object . this method produces the bytecode of the proxy class used to access the exported object . a remote applet can load the proxy class and call a method on the exported object .
+---------------------------------------Id: 39
+ code 
+ @Override public boolean connectionAllowed(EventSetDescriptor esd){
+  return connectionAllowed(esd.getName());
+}
+Ground Truth: returns true if , at this time , the object will accept a connection via the named event 
+Code-NN : returns true if , at this time , the object will accept a connection according to the supplied eventsetdescriptor
+H-Deepcom : returns true if , at this time , the object will accept a connection according the the supplied
+Attnndgru : returns true if , at this time , the object will accept a connection according to the supplied eventsetdescriptor
+NeuralCodeSum :returns true if , at this time , the object will accept a connection according to the supplied eventsetdescriptor
+Code2seq : returns true if at the given
+Hybrid-DRL: returns true if at this time the object will accept a connection
+Ast-attendgru: returns true if , at this time , the object will accept a connection according to the supplied eventsetdescriptor
+CodeASTNN : returns true if , at this time , the object will accept a connection according to the supplied eventsetdescriptor
+CASTS  : returns true if , at this time , the object will accept a connection via the named event
+---------------------------------------Id: 40
+ code 
+ public static Request newPostOpenGraphActionRequest(Session session,OpenGraphAction openGraphAction,Callback callback){
+  if (openGraphAction == null) {
+    throw new FacebookException("openGraphAction cannot be null");
+  }
+  if (Utility.isNullOrEmpty(openGraphAction.getType())) {
+    throw new FacebookException("openGraphAction must have non-null 'type' property");
+  }
+  String path=String.format(MY_ACTION_FORMAT,openGraphAction.getType());
+  return newPostRequest(session,path,openGraphAction,callback);
+}
+Ground Truth: creates a new request configured to publish an open graph action . 
+Code-NN : creates a new request configured . publish be .
+H-Deepcom : creates a new request configured to publish . open open the the . .
+Attnndgru : creates a new request configured to publish an open request . this callback must be re for the request progress .
+NeuralCodeSum :creates an action request configured to publish an open graph action .
+Code2seq : creates a new request request
+Hybrid-DRL: returns a new http request
+Ast-attendgru: creates a new request configured to publish an access limit with the new and adds them to session session with the specified sign - bound properties . this allows you to change the initial request the information relating to the new session id
+CodeASTNN : creates an open graph configured to publish a new request configured .
+CASTS  : creates a new request configured to publish an open graph action .
+---------------------------------------Id: 41
+ code 
+ public static void generateExtensionManager(File rootFolder) throws IOException {
+  File outFile=new File(rootFolder,REGISTRY_PATH);
+  StringBuilder builder=new StringBuilder();
+  builder.append("package org.eclipse.che.ide.client;\n\n");
+  generateImports(builder);
+  generateClass(builder);
+  FileUtils.writeStringToFile(outFile,builder.toString());
+}
+Ground Truth: generate to source of the class . 
+Code-NN : generate a source of the class file
+H-Deepcom : generate the source of the class .
+Attnndgru : generate into an xml version field .
+NeuralCodeSum :generate source of the class
+Code2seq : creates a new file file to
+Hybrid-DRL: writes a file to a file
+Ast-attendgru: generate to source of the class
+CodeASTNN : generate to source of the class
+CASTS  : generate to source of the class .
+---------------------------------------Id: 42
+ code 
+ public void send(Set recipients,boolean multicast) throws InterruptedException, ReplyException {
+  final boolean isDebugEnabled=logger.isDebugEnabled();
+  if (Thread.interrupted())   throw new InterruptedException();
+  recipients=new HashSet(recipients);
+  DistributedMember me=originDm.getDistributionManagerId();
+  if (recipients.contains(me)) {
+    recipients.remove(me);
+  }
+  if (isDebugEnabled) {
+    logger.debug("Recipients for SerialAckedMessage are {}",recipients);
+  }
+  rp=new ReplyProcessor21(originDm,recipients);
+  processorId=rp.getProcessorId();
+  setRecipients(recipients);
+  setMulticast(multicast);
+  Set failures=originDm.putOutgoing(this);
+  if (failures != null && failures.size() > 0) {
+    for (Iterator i=failures.iterator(); i.hasNext(); ) {
+      InternalDistributedMember mbr=(InternalDistributedMember)i.next();
+      if (isDebugEnabled) {
+        logger.debug("Unable to send serial acked message to {}",mbr);
+      }
+    }
+  }
+  rp.waitForReplies();
+}
+Ground Truth: send the message and wait for replies 
+Code-NN : send the message and an timeout notifications
+H-Deepcom : send a for message sends for .
+Attnndgru : close the datagram connection log ( either by an assignment or stop associated to the tcp and client client to finish ) . it notifies the on the associated process tracking " server : success . and
+NeuralCodeSum :send the message to a listening , and set the local listening to the server . replies replies with replies ones
+Code2seq : this method is called when the
+Hybrid-DRL: sends a profile to the request
+Ast-attendgru: send a notification object and updates the message and it ' s profile .
+CodeASTNN : send replies message and wait for replies
+CASTS  : send the message and wait for replies
+---------------------------------------Id: 43
+ code 
+ public static boolean hasTokenInformation(Bundle bundle){
+  if (bundle == null) {
+    return false;
+  }
+  String token=bundle.getString(TOKEN_KEY);
+  if ((token == null) || (token.length() == 0)) {
+    return false;
+  }
+  long expiresMilliseconds=bundle.getLong(EXPIRATION_DATE_KEY,0L);
+  if (expiresMilliseconds == 0L) {
+    return false;
+  }
+  return true;
+}
+Ground Truth: returns a boolean indicating whether a bundle contains properties that could be a valid saved token . 
+Code-NN : returns a boolean indicating whether the json contains specified or could be a valid saved token
+H-Deepcom : returns whether a whether indicating a bundle the the could could could could a a
+Attnndgru : indicates whether a bundle throw an exception
+NeuralCodeSum :returns a boolean indicating whether a bundle contains properties that could be a valid bundle .
+Code2seq : checks if the given key is
+Hybrid-DRL: returns true if the given container has been established
+Ast-attendgru: returns whether the given bundle contains a bundle or a bundle with the same false . optionally caller if both the given are valid and known for the request .
+CodeASTNN : returns a boolean indicating whether a bundle saved saved properties could be a valid saved saved bundle .
+CASTS  : returns a boolean indicating whether a bundle contains properties that could be a valid saved token .
+---------------------------------------Id: 44
+ code 
+ public static void toString(Iterator<?> iter,String separator,StringBuilder sb){
+  while (iter.hasNext()) {
+    sb.append(iter.next());
+    if (iter.hasNext()) {
+      sb.append(separator);
+    }
+  }
+}
+Ground Truth: converts an iterator to a string by concatenating all of the string representations of objects in the iterator , divided by a separator . 
+Code-NN : similar a debug a a given a iteration with given string the the the the separator separator separator separator separator item given
+H-Deepcom : helper multiple converts separated of concatenating concatenating of a a a a a a number number . redundant redundant . be be be be be be be be be be be be be be be be be be be be be be . . . . . . .
+Attnndgru : converts a string into a charset
+NeuralCodeSum :creates a string containing all elements of the iterator equivalents .
+Code2seq : appends the given string to the
+Hybrid-DRL: returns a string representation of the string
+Ast-attendgru: converts the given iterator to a string , optionally joining them .
+CodeASTNN : converts the iterator into a string by concatenating all part of the specified separator in the iterator , iterator , and arrays .
+CASTS  : converts an iterator to a string by concatenating all of the string representations of objects in the iterator , divided by a given separator .
+---------------------------------------Id: 45
+ code 
+ public boolean isToRead(){
+  Iterator<VariableValue> i=variables.iterator();
+  while (i.hasNext()) {
+    VariableValue v=i.next();
+    if (v.isToRead()) {
+      return true;
+    }
+  }
+  return false;
+}
+Ground Truth: this variable needs to be read if any of it ' s subsidiary variables needs to be read . 
+Code-NN : checks variable iff uses has contains contains variable the of variable variable this far method method method method throwing far far method method far thrown thrown thrown thrown thrown . needs needs needs needs needs needs needs needs needs needs needs needs needs needs needs needs method method method
+H-Deepcom : a if there a is " real " " " " " " " " " " " " " " " " " " " " " " " " " " " " " " " " " " " " " " " " " "
+Attnndgru : returns whether the rhs is transient as a letter ; value do not convert record to the cursor localization values converted .
+NeuralCodeSum :variable variable needs to be written to the variable .
+Code2seq : returns true if the value is
+Hybrid-DRL: returns true if the node is a variable value
+Ast-attendgru: check if it is a ( ready )
+CodeASTNN : this returns true if any of the variables needs to be written .
+CASTS  : this variable needs to be written if any of it ' s subsidiary variables needs to be written .
+---------------------------------------Id: 46
+ code 
+ public int write(byte[] destMac,byte[] packet,int offset,int byteCount){
+  if (destMac == null) {
+    throw new NullPointerException("destMac == null");
+  }
+  if (packet == null) {
+    throw new NullPointerException("packet == null");
+  }
+  Arrays.checkOffsetAndCount(packet.length,offset,byteCount);
+  if (destMac.length != 6) {
+    throw new IllegalArgumentException("MAC length must be 6: " + destMac.length);
+  }
+  return sendPacket(fd,mInterfaceName,mProtocolType,destMac,packet,offset,byteCount);
+}
+Ground Truth: writes a raw packet to the desired interface . a l2 header will be added which includes the specified destination address , our source mac , and the specified protocol type . the caller is responsible for computing correct ip - header and payload checksums . 
+Code-NN : use a raw packet to the desired . . % l2 header and be be includes includes includes includes on ip ip the the the the the the the . . . . . . . . . . . . . . . . . . . .
+H-Deepcom : writes a used packet to from endpoint will . l2 l2 the the the the the the the the the the the the the , , the the the the the mac , header header header header header header header header header header header header header the . .
+Attnndgru : writes a raw packet to the desired interface . a l2 header will be added which includes the specified destination address , our source mac , and the specified protocol type . this method blocks until all records will be updated , the initial specified protocol .
+NeuralCodeSum :writes a raw packet to the desired interface . a raw header will be added which includes the specified destination address , our source mac , and the specified protocol type . the caller includes computing the specified destination address , and payload the specified header will be added to
+Code2seq : writes a byte array from the
+Hybrid-DRL: writes a packet to the given byte
+Ast-attendgru: writes a single , encoded as bytes , padding down by the specified
+CodeASTNN : writes a raw packet to the desired interface . the payload includes a l2 payload , our protocol will be added which includes the desired interface .
+CASTS  : writes a raw packet to the desired interface . a l2 header will be added which includes the specified destination address , our source mac , and the specified protocol type . the caller is responsible for computing correct ip - header and payload checksums .
+---------------------------------------Id: 47
+ code 
+ protected void stopWraparoundTest(){
+  if (testRunning && wrapTest) {
+    wrapTimer.stop();
+    statusText1.setText("Wraparound Test Stopped, " + Integer.toString(numErrors) + " Errors Found");
+    statusText1.setVisible(true);
+    statusText2.setText(Integer.toString(numIterations) + " Cycles Completed");
+    statusText2.setVisible(true);
+  }
+}
+Ground Truth: local method to stop a wraparound test 
+Code-NN : this the for . . errors .
+H-Deepcom : stops method test based the
+Attnndgru : called by the test method that stops on .
+NeuralCodeSum :stop test of the method , to stop the test aug
+Code2seq : called when the main button is
+Hybrid-DRL: stops the <unk>
+Ast-attendgru: records the current usage text ( generally any of the or cpu sets in the text area ) .
+CodeASTNN : local method to stop an ctrl message
+CASTS  : local method to stop an output test
+---------------------------------------Id: 48
+ code 
+ private void nukeSymbols(){
+  _count=0;
+  _longestCollisionList=0;
+  Arrays.fill(_mainHash,0);
+  Arrays.fill(_mainNames,null);
+  Arrays.fill(_collList,null);
+  _collCount=0;
+  _collEnd=0;
+}
+Ground Truth: helper method called to empty all shared symbols , but to leave arrays allocated 
+Code-NN : diff distributed on a object
+H-Deepcom : helper that be edit an is order symbols to to to to to to . . . . . forms
+Attnndgru : this runs the program has been allocated and its original value , to list the list over variables
+NeuralCodeSum :helper method to leave all shared symbols
+Code2seq : resets the current list of the
+Hybrid-DRL: returns a new test
+Ast-attendgru: sets the range " count " if not < p / > < br > on , replacement , issue is not called , but we don ' t need to be explicitly
+CodeASTNN : helper method to assign all shared symbols , to leave arrays allocated
+CASTS  : helper method called to empty all shared symbols , but to leave arrays allocated
+---------------------------------------Id: 49
+ code 
+ private static float determineEnemyBlitzStrength(final Territory blitzHere,final List<Route> blitzTerrRoutes,final List<Territory> blockTerr,final GameData data,final PlayerID ePlayer){
+  final HashSet<Integer> ignore=new HashSet<>();
+  ignore.add(1);
+  final CompositeMatch<Unit> blitzUnit=new CompositeMatchAnd<>(Matches.unitIsOwnedBy(ePlayer),Matches.UnitCanBlitz,Matches.UnitCanMove);
+  final CompositeMatch<Territory> validBlitzRoute=new CompositeMatchAnd<>(Matches.territoryHasNoEnemyUnits(ePlayer,data),Matches.TerritoryIsNotImpassableToLandUnits(ePlayer,data));
+  final List<Route> routes=new ArrayList<>();
+  final List<Unit> blitzUnits=findAttackers(blitzHere,2,ignore,ePlayer,data,blitzUnit,validBlitzRoute,blockTerr,routes,false);
+  for (  final Route r : routes) {
+    if (r.numberOfSteps() == 2) {
+      blitzTerrRoutes.add(r);
+    }
+  }
+  return strength(blitzUnits,true,false,true);
+}
+Ground Truth: determine the enemy potential for blitzing a territory - all enemies are combined 
+Code-NN : determine the enemy potential for of territory - are are are combined
+H-Deepcom : determine the enemy potential for territory territory territory territory combined are
+Attnndgru : determine the enemy potential for a territory - all are combined
+NeuralCodeSum :determine the enemy potential potential for blitzing
+Code2seq : returns the next set of the
+Hybrid-DRL: returns the first of the given objects in the given list
+Ast-attendgru: determine the enemy and compute the relevant , , .
+CodeASTNN : determine the enemy territory - all enemies for blitzing a territory - all enemies are ignored
+CASTS  : determine the enemy potential for blitzing a territory - all enemies are combined
+---------------------------------------Id: 50
+ code 
+ public Name join(String identifier){
+  validateLowerUnderscore(identifier);
+  List<NamePiece> newPieceList=new ArrayList<>();
+  newPieceList.addAll(namePieces);
+  newPieceList.add(new NamePiece(identifier,CaseFormat.LOWER_UNDERSCORE));
+  return new Name(newPieceList);
+}
+Ground Truth: returns a new name containing the pieces from this name plus the given identifier added on the end . 
+Code-NN : follows a new from containing based
+H-Deepcom : generate a css with from as name form hash form form form form form form form form form form form form
+Attnndgru : encodes a name and name into a new name within the context of the specified imports the supplied sequence , and all the sequence attributes with this identifier .
+NeuralCodeSum :returns a new name containing the pieces from another range of the requested name .
+Code2seq : creates a new list of the
+Hybrid-DRL: returns a new name with the given name
+Ast-attendgru: creates a new empty list with the given name and type ( name , list ) pairs of the given string name and the list of dependencies .
+CodeASTNN : creates a name from a given identifier name and lower case - plus the methods of the given name .
+CASTS  : returns a new name containing the pieces from this name plus the pieces of the given identifier added on the end .
+---------------------------------------Id: 51
+ code 
+ protected boolean readReceiveDelay(){
+  try {
+    receiveDelay=Integer.parseInt(receiveDelayField.getText());
+  }
+ catch (  Exception e) {
+    statusText1.setText(rb.getString("Error7"));
+    statusText1.setVisible(true);
+    receiveDelay=0;
+    errorInStatus1=true;
+    resetNotes2();
+    return (false);
+  }
+  if (receiveDelay < 0) {
+    statusText1.setText(rb.getString("Error8"));
+    statusText1.setVisible(true);
+    receiveDelay=0;
+    errorInStatus1=true;
+    resetNotes2();
+    return (false);
+  }
+  if (receiveDelay > 65535) {
+    statusText1.setText(rb.getString("Error9"));
+    statusText1.setVisible(true);
+    receiveDelay=0;
+    errorInStatus1=true;
+    resetNotes2();
+    return (false);
+  }
+  return true;
+}
+Ground Truth: read receive delay from window returns ' true ' if successful , ' false ' if an error was detected . if an error is detected , a suitable error message is placed in the notes area 
+Code-NN : read the status and unable notes ' ' ' is is is is is is is . . detected detected
+H-Deepcom : read - delay reply read password password password ' ' ' ' ' ' ' ' ' comment notes notes notes notes notes notes notes notes notes notes notes notes
+Attnndgru : read number from user 2 s filling invoked as invoked when is set to available .
+NeuralCodeSum :read ( ) from window returns ' true ' if successful , a suitable error message is placed in the notes area
+Code2seq : check if the current message is
+Hybrid-DRL: read text to see if the text is successful
+Ast-attendgru: read number of new messages from the
+CodeASTNN : read receive delay time , ' true ' if successful , ' false ' if an error was detected . if an error was detected , a suitable error message is placed in the notes area
+CASTS  : read receive receive receive receive events from window returns ' true ' if successful , ' false ' if an error was detected . if an error is detected , a suitable error message is placed in the notes area
+---------------------------------------Id: 52
+ code 
+ @Override public void paintComponent(Graphics g){
+  super.paintComponent(g);
+  Graphics2D graphics=(Graphics2D)g;
+  graphics.setBackground(mColorSpectrumBackground);
+  RenderingHints renderHints=new RenderingHints(RenderingHints.KEY_ANTIALIASING,RenderingHints.VALUE_ANTIALIAS_ON);
+  renderHints.put(RenderingHints.KEY_RENDERING,RenderingHints.VALUE_RENDER_QUALITY);
+  graphics.setRenderingHints(renderHints);
+  drawFrequencies(graphics);
+  drawCursor(graphics);
+}
+Ground Truth: renders the channel configs , lines , labels , and cursor 
+Code-NN : multiline a background array a graphics , a the given image
+H-Deepcom : renders the comment paint a top top paint paint paint . . . . . being being being being being being being being . . being being being being being being being being being being being being being being being . . . . . on on on on
+Attnndgru : paints the of the .
+NeuralCodeSum :renders the channel using the nominal labels
+Code2seq : draws the background and show the
+Hybrid-DRL: paints the caret with the given graphics
+Ast-attendgru: renders the component using the selected .
+CodeASTNN : renders the background for the channel .
+CASTS  : renders the channel configs , lines , labels , and cursor
+---------------------------------------Id: 53
+ code 
+ public boolean deleteAttachmentPoint(DatapathId sw,OFPort port){
+  AttachmentPoint ap=new AttachmentPoint(sw,port,new Date(0));
+  if (this.oldAPs != null) {
+    ArrayList<AttachmentPoint> apList=new ArrayList<AttachmentPoint>();
+    apList.addAll(this.oldAPs);
+    int index=apList.indexOf(ap);
+    if (index > 0) {
+      apList.remove(index);
+      this.oldAPs=apList;
+    }
+  }
+  if (this.attachmentPoints != null) {
+    ArrayList<AttachmentPoint> apList=new ArrayList<AttachmentPoint>();
+    apList.addAll(this.attachmentPoints);
+    int index=apList.indexOf(ap);
+    if (index > 0) {
+      apList.remove(index);
+      this.attachmentPoints=apList;
+      return true;
+    }
+  }
+  return false;
+}
+Ground Truth: delete ( sw , port ) from the list of list of attachment points and oldaps . 
+Code-NN : delete the attachment attachment point older the the of list of attachment points points points
+H-Deepcom : delete a new and from a and and and a a a a a a a a ) ) attachment attachment ) attachment attachment attachment attachment attachment attachment attachment attachment attachment
+Attnndgru : the method that the train will not be modified if the work returns deleted platform the network .
+NeuralCodeSum :delete a list of attachment points from the list of attachment points .
+Code2seq : returns true if the given device
+Hybrid-DRL: remove a given port from the given port and the given port
+Ast-attendgru: delete ( limit , ) from the given attachment device .
+CodeASTNN : remove ( sw , port ) from the list of attachment points and oldaps .
+CASTS  : delete ( sw , port ) from the list of list of attachment points and oldaps .
+---------------------------------------Id: 54
+ code 
+ public synchronized int totalRecoverFiles(){
+  int total=0;
+  for (  File file : fileDetails.values()) {
+    if (file.reused() == false) {
+      total++;
+    }
+  }
+  return total;
+}
+Ground Truth: total number of files to be recovered ( potentially not yet done ) 
+Code-NN : tell a of of from the recovered
+H-Deepcom : implements disk files files the try yet yet if files if files files files files disk disk disk disk disk disk disk disk disk disk disk disk
+Attnndgru : to be called to persistent of all concurrent updates .
+NeuralCodeSum :total files within the file system
+Code2seq : returns the index of the file
+Hybrid-DRL: returns the total of the file
+Ast-attendgru: fetches the files and return the index of all files that have been decoded . in this case the filter ' s have been loaded information it is yet removed .
+CodeASTNN : total number of files recovered ( potentially open ) files to be recovered
+CASTS  : total files of files that were recovered ( potentially not yet done )
+---------------------------------------Id: 55
+ code 
+ public static synchronized void cleanup(){
+  w.lock();
+  try {
+    secp256k1_destroy_context(Secp256k1Context.getContext());
+  }
+  finally {
+    w.unlock();
+  }
+}
+Ground Truth: libsecp256k1 cleanup - this destroys the secp256k1 context object this should be called at the end of the program for proper cleanup of the context . 
+Code-NN : libsecp256k1 cleanup - this destroys the secp256k1 context with it lock called done . the . thread thread . .
+H-Deepcom : libsecp256k1 cleanup by destroys the secp256k1 context the be be be be the the the the the the the the the the the cleanup .
+Attnndgru : libsecp256k1 cleanup - this destroys the secp256k1 context object this should be called at the end of the program and then initialize itself as an element .
+NeuralCodeSum :libsecp256k1 cleanup - destroys the secp256k1 for the secp256k1 object . this should be called at the end of the secp256k1 for future usage .
+Code2seq : this method is called when the
+Hybrid-DRL: clears the state of the reader
+Ast-attendgru: libsecp256k1 cleanup - this destroys the secp256k1 context object this should be called at the context main thread finishes when the last created context environment is disconnected .
+CodeASTNN : libsecp256k1 cleanup - this destroys the secp256k1 context at the end of the program this context .
+CASTS  : libsecp256k1 cleanup - this destroys the secp256k1 context object this should be called at the end of the program for proper cleanup of the context .
+---------------------------------------Id: 56
+ code 
+ public InputStreamReader reader(final String charset) throws HttpRequestException {
+  try {
+    return new InputStreamReader(stream(),getValidCharset(charset));
+  }
+ catch (  UnsupportedEncodingException e) {
+    throw new HttpRequestException(e);
+  }
+}
+Ground Truth: get reader to response body using given character set . < p > this will fall back to using the utf - 8 character set if the given charset is null 
+Code-NN : get the request response . stream . the to . . < charset < fall fall fall back back the . . . . . . . . . . . . . .
+H-Deepcom : get a writes content body given given character given < < p p utf ( ( ( specified ( ( ( charset ( charset charset charset charset charset charset charset charset specified specified specified specified specified specified the specified specified the charset the the the the the the the
+Attnndgru : get reader to response body using given character set . < p > this will fall back as a snapshot of a string using the specified character .
+NeuralCodeSum :get reader to response body using given character set
+Code2seq : reads the contents of the given
+Hybrid-DRL: get reader from response stream
+Ast-attendgru: get reader to an input stream
+CodeASTNN : creates a charset object with charset as json string
+CASTS  : get reader to response body using given character set . < p > this will fall back to using the utf - 8 character set if the given charset is null
+---------------------------------------Id: 57
+ code 
+ private static int indexOf(int fromIndex,CharSequence csq){
+  if (csq == null)   return 0;
+  int length=csq.length();
+  int j=fromIndex;
+  int i=(j < length) ? csq.charAt(j++) : 0;
+  i<<=16;
+  i|=(j < length) ? csq.charAt(j++) : 0;
+  return i;
+}
+Ground Truth: returns the index starting at the specified index ( two characters at a time ) . 
+Code-NN : returns the prepared index at the specified index part of specified specified
+H-Deepcom : returns the index starting at the specified specified in characters characters characters specified specified specified specified specified . .
+Attnndgru : returns the position within the specified character sequence .
+NeuralCodeSum :returns the index starting at a time from this cursor points at a time . returns - 1 if the end points of the first character at this point .
+Code2seq : returns the index of the given
+Hybrid-DRL: returns the index of the specified character in the specified character
+Ast-attendgru: returns the index starting at the specified index ( inclusive ) .
+CodeASTNN : returns the index starting at the specified index ( two starting at the specified index
+CASTS  : returns the index starting at the specified index ( two characters at a time ) .
+---------------------------------------Id: 58
+ code 
+ private ArrayList<String> filterYears(ArrayList<String> items){
+  Iterator<String> iterator;
+  Calendar now=Calendar.getInstance();
+  int year=now.get(Calendar.YEAR);
+  String yearInString=String.valueOf(year);
+  Log.d(TAG,"Year: " + yearInString);
+  int prevYear=year - 1;
+  String prevYearInString=String.valueOf(prevYear);
+  Log.d(TAG,"Previous year: " + prevYearInString);
+  for (iterator=items.iterator(); iterator.hasNext(); ) {
+    String s=iterator.next();
+    if (s.matches(".*(19|20)\\d{2}.*") && !s.contains(yearInString) && !s.contains(prevYearInString)) {
+      Log.d(TAG,"Filtering out year " + s);
+      iterator.remove();
+    }
+  }
+  Log.d(TAG,"Items: " + items.toString());
+  return items;
+}
+Ground Truth: remove categories that contain a year in them ( starting with 19__ or 20__ ) , except for this year and previous year rationale : https : / / github . com / commons - app / apps - android - commons / issues / 47 
+Code-NN : checks categories from of year .
+H-Deepcom : remove categories that contain a year any ( ( ( ( ( . rationale rationale 1 1 commons commons commons commons commons commons commons commons commons commons commons commons commons commons commons commons commons commons commons commons commons commons commons
+Attnndgru : remove categories that don ' t configure , use
+NeuralCodeSum :remove categories that contain them in a year that contain the " year " or " if the last year and previous year in them , then remove them that that contain the status of the year in the year
+Code2seq : returns the string representation of the
+Hybrid-DRL: returns a list of strings from the specified list of strings
+Ast-attendgru: remove categories that contain a year in them ( starting with a single line of the common possible number ) , and convert them to select one
+CodeASTNN : remove categories that contain a year in them ( starting with 19__ or 20__ )
+CASTS  : remove categories that contain a year in them ( starting with 19__ or 20__ ) , except for this year and previous year rationale : https : / / github . com / commons - app / apps - android - commons / issues / 47
+---------------------------------------Id: 59
+ code 
+ public static Configuration load(Reader reader) throws IOException {
+  try {
+    Properties properties=new Properties();
+    properties.load(reader);
+    return from(properties);
+  }
+  finally {
+    reader.close();
+  }
+}
+Ground Truth: obtain a configuration instance by loading the properties from the supplied reader . 
+Code-NN : create the token a the and stream properties the parsing stream
+H-Deepcom : loads the from using properties loading the the the the the the the
+Attnndgru : returns a property object as a reader .
+NeuralCodeSum :loads the configuration from the supplied reader .
+Code2seq : loads the properties from the given
+Hybrid-DRL: create a configuration from the given reader
+Ast-attendgru: loads the configuration from the specified configuration , must be used for getting one configuration in properties .
+CodeASTNN : construct a configuration from the supplied properties instance .
+CASTS  : load a configuration instance by loading the properties from the supplied reader .
+---------------------------------------Id: 60
+ code 
+ public void poll(final TcpSocketStatisticsHandler handler){
+  this.statisticsHandler=handler;
+  try {
+    fileLoader.load();
+    final ByteBuffer buffer=fileLoader.getBuffer();
+    lineParser.reset();
+    lineParser.handleToken(buffer,buffer.position(),buffer.limit());
+  }
+  finally {
+    this.statisticsHandler=null;
+  }
+  monitoredSockets.purgeEntriesOlderThan(updateCount);
+  updateCount++;
+}
+Ground Truth: read from monitored file , report any changed values for monitored socket statistics . not thread - safe , only call from a single thread . 
+Code-NN : resets google new . scanner the managed been available successful
+H-Deepcom : sends for handler . storage udp . .
+Attnndgru : signals a dummy task , which is currently active ;
+NeuralCodeSum :read the combined classloader from the provided file , and puts the line for the file , and puts the statistics suppressed count .
+Code2seq : this method will be called by
+Hybrid-DRL: reads a message from the queue
+Ast-attendgru: blocks for uploading to or video by current point in the file watcher .
+CodeASTNN : read not thread from monitored file , report any statistics used for udp statistics .
+CASTS  : read from monitored file , report any changed values to the supplied handler . not thread - safe , only call from a single thread .
+---------------------------------------Id: 61
+ code 
+ public int compareTo(CharBuffer otherBuffer){
+  int compareRemaining=(remaining() < otherBuffer.remaining()) ? remaining() : otherBuffer.remaining();
+  int thisPos=position;
+  int otherPos=otherBuffer.position;
+  char thisByte, otherByte;
+  while (compareRemaining > 0) {
+    thisByte=get(thisPos);
+    otherByte=otherBuffer.get(otherPos);
+    if (thisByte != otherByte) {
+      return thisByte < otherByte ? -1 : 1;
+    }
+    thisPos++;
+    otherPos++;
+    compareRemaining--;
+  }
+  return remaining() - otherBuffer.remaining();
+}
+Ground Truth: compare the remaining chars of this buffer to another char buffer ' s remaining chars . 
+Code-NN : compare the remaining shorts of into buffer to another . two ' remaining remaining shorts .
+H-Deepcom : compare the remaining parser int to . . . . remaining remaining remaining remaining character character character character character character character character character character character character character character character character character character character character character character character character character character character character character character character character character character character
+Attnndgru : compares construction of unicode character in the remaining first stream .
+NeuralCodeSum :compare the remaining shorts of this buffer to another remaining shorts of this buffer ' s remaining shorts .
+Code2seq : returns the number of consecutive characters
+Hybrid-DRL: compares the remaining bytes of the remaining chars of this buffer to
+Ast-attendgru: compare the remaining shorts of this buffer to another character buffer ' s remaining longs .
+CodeASTNN : compares the remaining bytes of this buffer to another byte buffer ' s remaining longs .
+CASTS  : compares the remaining bytes of this buffer to another char buffer ' s remaining bytes .
+---------------------------------------Id: 62
+ code 
+ public static String removePattern(final String source,final String regex){
+  return replacePattern(source,regex,StringUtils.EMPTY);
+}
+Ground Truth: removes each substring of the source string that matches the given regular expression using the dotall option . 
+Code-NN : calculates the substring from the filter the of of of a regex expression the
+H-Deepcom : removes tab . . the substring the the the the expression the expression expression . .
+Attnndgru : removes each substring of the source string that matches the given regular expression using the backslash .
+NeuralCodeSum :removes each substring of the substring that matches the dotall string .
+Code2seq : returns a string of the given
+Hybrid-DRL: replaces all occurrences of the given regular expression with the given regular
+Ast-attendgru: removes each substring of the source string that matches the given regular expression with the given replacement string .
+CodeASTNN : removes each substring of the source string that matches the given source string using the dotall dotall .
+CASTS  : removes each substring of the source string that matches the given regular expression using the dotall option .
+---------------------------------------Id: 63
+ code 
+ private void retrieveWaypoints(SearchQuery query,ArrayList<Waypoint> waypoints){
+  String queryLikeSelection2="%" + query.textQuery + "%";
+  String[] waypointSelectionArgs=new String[]{queryLikeSelection2,queryLikeSelection2,queryLikeSelection2};
+  Cursor cursor=null;
+  try {
+    cursor=providerUtils.getWaypointCursor(WAYPOINT_SELECTION_QUERY,waypointSelectionArgs,WAYPOINT_SELECTION_ORDER,MAX_SCORED_WAYPOINTS);
+    if (cursor != null) {
+      waypoints.ensureCapacity(cursor.getCount());
+      while (cursor.moveToNext()) {
+        Waypoint waypoint=providerUtils.createWaypoint(cursor);
+        if (LocationUtils.isValidLocation(waypoint.getLocation())) {
+          waypoints.add(waypoint);
+        }
+      }
+    }
+  }
+  finally {
+    if (cursor != null) {
+      cursor.close();
+    }
+  }
+}
+Ground Truth: retrieves waypoints matching the given query from the database . 
+Code-NN : move the query the
+H-Deepcom : constructs and parameters from query
+Attnndgru : performs a binary search for the query .
+NeuralCodeSum :retrieves a selection query from the database .
+Code2seq : this method will called when the
+Hybrid-DRL: returns predecessors list of the query
+Ast-attendgru: remove any that occur on the filter array lists returns . if no will be found to , search for the live database .
+CodeASTNN : retrieves matching database specific query .
+CASTS  : retrieves waypoint matching the given query from the database .
+---------------------------------------Id: 64
+ code 
+ public static String plnoun(final int quantity,final String noun){
+  final String enoun=fullForm(noun);
+  if (quantity == 1) {
+    return singular(enoun);
+  }
+ else {
+    return plural(noun);
+  }
+}
+Ground Truth: returns either the plural or singular form of the given noun , depending on the quantity . 
+Code-NN : creates either pkcs history a singular form the the the
+H-Deepcom : returns the of plural or singular form of the given depending depending depending depending the available available available quantity quantity .
+Attnndgru : find where which ends " " , " " , " { } } " structures , " an " or " accept " . if " is not found , no rewrites .
+NeuralCodeSum :returns the plural form of the given noun , depending on the full of the full noun .
+Code2seq : returns a string representing the given
+Hybrid-DRL: returns an plural form of the given noun depending on the plural
+Ast-attendgru: helper method to use a human readable string of format gaps .
+CodeASTNN : returns either the plural or singular form of the given noun , depending on the quantity ; also prefixes the quantity .
+CASTS  : returns either the plural or singular form of the given noun , depending on the quantity ) .
+---------------------------------------Id: 65
+ code 
+ private void unshareMain(){
+  int[] old=_mainHash;
+  int len=_mainHash.length;
+  _mainHash=new int[len];
+  System.arraycopy(old,0,_mainHash,0,len);
+  _mainHashShared=false;
+}
+Ground Truth: method that needs to be called , if the main hash structure is ( may be ) shared . this happens every time something is added , even if addition is to the collision list ( since collision list index comes from lowest 8 bits of the primary hash entry ) 
+Code-NN : and the needs hash box set the the set . the the the . the the the the . . . . . hash hash
+H-Deepcom : called that needs , be be is be be is is up to to to to to . . . . collision collision collision collision collision collision collision collision collision collision collision collision collision collision collision collision collision collision collision collision collision collision collision collision
+Attnndgru : updates the current score if necessary . does nothing and existing term . it may be called if the current state is full and zero , its main sets , and processing each time zone pos .
+NeuralCodeSum :method that needs to be called , if collision is ( may be ) shared hash since collision .
+Code2seq : this method is called to the
+Hybrid-DRL: add the capacity to the array
+Ast-attendgru: run the main ( in all of its parent and the children of initialization to the inside csv views and . this method must be called when the main hash code of the in the label array being added to the outer
+CodeASTNN : if the shared hash is shared , the collision list of collision ( primary ) comes ( primary ) , the collision list will be added to the collision list . if primary is shared , the collision list is added to the collision list contains primary entry is shared
+CASTS  : method that needs to be called , if the main hash structure is ( may be ) shared . this happens every time something is added , even if addition is to the collision list ( since collision list index comes from lowest 8 bits of the primary hash entry
+---------------------------------------Id: 66
+ code 
+ public ComponentConfigBuilder addItemInMultifield(String multifieldLabel,int index,String itemType,String itemLabel,String value){
+  String type=String.format("multifield#%s#%s",index,itemType);
+  String label=String.format("%s#%s",multifieldLabel,itemLabel);
+  config.add(new ConfigurationEntry(currentTab,type,label,value));
+  return this;
+}
+Ground Truth: adds multifield entry , equivalent of : | tab_name | multifield # index # itemtype | multifieldlabel # itemlabel | value | 
+Code-NN : creates a label text of a specified | | | | | | |
+H-Deepcom : adds an item in the -
+Attnndgru : adds an item to the item to be , as well as the labels of a trace variable , at the item id and the base name is at the current position .
+NeuralCodeSum :adds a new entry .
+Code2seq : creates a new row with the
+Hybrid-DRL: adds an item to the list
+Ast-attendgru: adds a number of element names and a set of labels , labels , labels , and document , registers the item , and sets the position of the label at the specified position in the list . if the item then its mapping is not a union add
+CodeASTNN : adds fieldset entry , equivalent , | tab_name | value |
+CASTS  : adds item entry , equivalent of : | tab_name | label | label | multifieldlabel # itemlabel | value |
+---------------------------------------Id: 67
+ code 
+ private void blackmanHarris4sMin(int size){
+  int start=(windowFunction.length - size) / 2;
+  int stop=(windowFunction.length + size) / 2;
+  double scale=1.0 / (double)size / 0.36;
+  for (int i=0; start < stop; start++, i++)   windowFunction[i]=scale * (0.35875 - 0.48829 * Math.cos(twoPI * i / size) + 0.14128 * Math.cos(2 * twoPI * i / size) - 0.01168 * Math.cos(3 * twoPI * i / size));
+}
+Ground Truth: fill an array with the values of a minimum 4 - sample blackman - harris window function 
+Code-NN : fill the array with the values - sample 74 - sample sample sample - - - and
+H-Deepcom : ( the with the of of of . . ,
+Attnndgru : fill an array with the values of 2 : 1 . 0 the number of components - - forwards - negative values * clipping intervals . supported bits are not equal 2 . intervals fills this test because the power - of - phase is longer , measured in
+NeuralCodeSum :fill an array with the values of a minimum blackman - sample blackman - harris blackman - sample - sample blackman - sample blackman - sample - sample blackman - sample blackman - sample in the sample - sample blackman - - e . g .
+Code2seq : calculate the distance of the problem
+Hybrid-DRL: updates the number of values in the given number
+Ast-attendgru: fill the specified range of the range rings into account .
+CodeASTNN : fill an array with the values of a 74 3 - sample blackman - harris window function
+CASTS  : fill an array with the values of a minimum 4 - sample blackman - harris window function
+---------------------------------------Id: 68
+ code 
+ public static BigDecimal parseBigDecimalForEntity(String bigDecimalString) throws NumberFormatException {
+  if (bigDecimalString == null) {
+    return null;
+  }
+  bigDecimalString=bigDecimalString.trim();
+  bigDecimalString=bigDecimalString.replaceAll(",","");
+  if (bigDecimalString.length() < 1) {
+    return null;
+  }
+  return new BigDecimal(bigDecimalString);
+}
+Ground Truth: return nulls for empty strings , as the entity engine can deal with nulls . this will provide blanks in fields where bigdecimal display . blank meaning null , vs . 0 which means 0 
+Code-NN : nulls entity empty biginteger specific
+H-Deepcom : return nulls for empty . . , . . nulls nulls nulls nulls nulls nulls nulls nulls display display be nulls nulls display . . . vs vs 1
+Attnndgru : return nulls for empty strings , as the entity engine can deal with nulls . this will provide blanks in order to parse the operation ' s 8 bit value . this is used for queries such as keys as a der - encoding .
+NeuralCodeSum :return nulls for empty entity engine , as normal engine can deal with nulls . this will provide blanks in fields where bigdecimal display . blank meaning 0 as normal entity , vs { vs }
+Code2seq : formats the given string to a
+Hybrid-DRL: convert a big decimal to a big decimal
+Ast-attendgru: return nulls for empty strings , as if it exceeds or null value , otherwise null < p > can ' t be null , it returns null .
+CodeASTNN : return nulls for fields where nulls can deal with nulls or null . bigdecimal , vs . 0 . 0
+CASTS  : return nulls for empty strings , as the entity engine can deal with nulls . this will provide blanks in fields where bigdecimal display . blank meaning null , vs . 0 which means 0
+---------------------------------------Id: 69
+ code 
+ private void doPermissionWorkBeforeAndroidM(@NonNull Activity activity,@NonNull String[] permissions,@Nullable PermissionsResultAction action){
+  for (  String perm : permissions) {
+    if (action != null) {
+      if (!mPermissions.contains(perm)) {
+        action.onResult(perm,Permissions.NOT_FOUND);
+      }
+ else       if (ActivityCompat.checkSelfPermission(activity,perm) != PackageManager.PERMISSION_GRANTED) {
+        action.onResult(perm,Permissions.DENIED);
+      }
+ else {
+        action.onResult(perm,Permissions.GRANTED);
+      }
+    }
+  }
+}
+Ground Truth: when request permissions on devices before android m ( android 6 . 0 , api level 23 ) do the granted or denied work directly according to the permission status 
+Code-NN : check an permissions on devices before android handle handle android 6 6 . , related the 23 / the granted granted granted the permission permission permission permission permission permission permission permission permission permission permission permission permission . . . . . classes classes classes classes classes classes . .
+H-Deepcom : see all of for the status higher background . . . . . . . . . . exchange change change change change change change to
+Attnndgru : handles action to stop for specified trees
+NeuralCodeSum :when request permissions on devices before android granted work status
+Code2seq : this method is called when the
+Hybrid-DRL: method to customize the user
+Ast-attendgru: call display from android . android . auth . . cancel ( ) even when request ( ) , or even ( directly ) * openam * ( not more ) the " " ( e . g . " auth " ) , " "
+CodeASTNN : when request permissions do denied android before android m , do directly according to android 6 23 . 0
+CASTS  : when request permissions on devices before android m ( android 6 . 0 , api level 23 ) do the granted or denied work directly according to the permission status
+---------------------------------------Id: 70
+ code 
+ static boolean pairSum(int ar[],int x){
+  Arrays.sort(ar);
+  int len=ar.length;
+  for (int i=0, j=len - 1; i < j; ) {
+    if (ar[i] + ar[j] == x) {
+      return true;
+    }
+ else     if (ar[i] + ar[j] < x) {
+      i++;
+    }
+ else {
+      j--;
+    }
+  }
+  return false;
+}
+Ground Truth: using sorting . if we use merge sort or heap sort then ( - ) ( nlogn ) in worst case . if we use quick sort then o ( n ^ 2 ) in worst case . 
+Code-NN : sorting time ( ] arrays and , intervals heap heap , , range range time two , , worst , worst , , , , , , then then then worst 2 . . lowercase lowercase lowercase lowercase lowercase lowercase lowercase cancel cancel cancel cancel cancel cancel two
+H-Deepcom : private to to sort arrays array . . ) or or or ) ) ) ) ) ) ) ) )
+Attnndgru : uses an array of coordinates in a given array . since cos matrix can be on the same parser that a both cg .
+NeuralCodeSum :if we use an array or sort then sort its heap in worst . if we use 5 , return sort or heap
+Code2seq : returns true if the given array
+Hybrid-DRL: returns true if the given range is a valid array
+Ast-attendgru: the bit hash values at the beginning of the input vector
+CodeASTNN : using sorting . if we use merge sort or heap sort then o ( nlogn ) in worst case . if we use quick sort or equal to lowercase then o ( n ^ 2 ) if we use quick sort then o ( right now ^ 2 ) in
+CASTS  : using sorting . if we use merge sort or heap sort then ( - ) ( nlogn ) in worst case . if we use quick sort then o ( n ^ 2 ) in worst case .
+---------------------------------------Id: 71
+ code 
+ public double localScore(int i,int... parents){
+  for (  int p : parents)   if (forbidden.contains(p))   return Double.NaN;
+  double residualVariance=covariances.get(i,i);
+  int n=getSampleSize();
+  int p=parents.length;
+  Matrix covxx=getSelection1(covariances,parents);
+  try {
+    Matrix covxxInv=covxx.inverse();
+    Matrix covxy=getSelection2(covariances,parents,i);
+    Matrix b=covxxInv.times(covxy);
+    double dot=0.0;
+    for (int j=0; j < covxy.getRowDimension(); j++) {
+      for (int k=0; k < covxy.getColumnDimension(); k++) {
+        dot+=covxy.get(j,k) * b.get(j,k);
+      }
+    }
+    residualVariance-=dot;
+    if (residualVariance <= 0) {
+      if (isVerbose()) {
+        out.println("Nonpositive residual varianceY: resVar / varianceY = " + (residualVariance / covariances.get(i,i)));
+      }
+      return Double.NaN;
+    }
+    double c=getPenaltyDiscount();
+    return score(residualVariance,n,logn,p,c);
+  }
+ catch (  Exception e) {
+    boolean removedOne=true;
+    while (removedOne) {
+      List<Integer> _parents=new ArrayList<>();
+      for (int y=0; y < parents.length; y++)       _parents.add(parents[y]);
+      _parents.removeAll(forbidden);
+      parents=new int[_parents.size()];
+      for (int y=0; y < _parents.size(); y++)       parents[y]=_parents.get(y);
+      removedOne=printMinimalLinearlyDependentSet(parents,covariances);
+    }
+    return Double.NaN;
+  }
+}
+Ground Truth: calculates the sample likelihood and bic score for i given its parents in a simple sem model 
+Code-NN : this the . ( the current size of the . for one based that that that the labels
+H-Deepcom : calculates one first metric is is point for i for i i ) ) method metric metric metric metric metric ) metric metric metric metric metric metric metric metric metric metric metric metric metric metric metric metric metric metric metric metric metric from ) ) . .
+Attnndgru : returns the sample distance from the given distance , this new composite and given distance . it will be in order
+NeuralCodeSum :calculates the predicted linear given the given parents times the i of the predicted model and returns the real value of the predicted model .
+Code2seq : returns the distance of the given
+Hybrid-DRL: performs a complete matrix
+Ast-attendgru: get the sample likelihood with closest focus
+CodeASTNN : calculates the sample likelihood and bic score for the given cid in the slot in the given position
+CASTS  : calculates the sample likelihood and bic score for i given its parents in a simple sem model
+---------------------------------------Id: 72
+ code 
+ public boolean equals(Object obj){
+  if (this == obj)   return true;
+  if (obj instanceof ECFieldFp) {
+    return (p.equals(((ECFieldFp)obj).p));
+  }
+  return false;
+}
+Ground Truth: compares this prime finite field for equality with the specified object . 
+Code-NN : returns whether the specified equality with specified specified the object
+H-Deepcom : compares whether to to object with with .
+Attnndgru : compares this given object / from this object with another object .
+NeuralCodeSum :compares this object with another object for equality . returns true if the specified object is identical to the same .
+Code2seq : checks if the specified object is
+Hybrid-DRL: returns true if the specified object is equal to this object
+Ast-attendgru: compares the two objects .
+CodeASTNN : compares this finite field equality with the specified object .
+CASTS  : compares this elliptic curve for equality with the specified object .
+---------------------------------------Id: 73
+ code 
+ @Override public boolean equals(Object o){
+  if (this == o) {
+    return true;
+  }
+  if (!(o instanceof PrototypeSize)) {
+    return false;
+  }
+  PrototypeSize size=(PrototypeSize)o;
+  return prototype.equals(size.prototype);
+}
+Ground Truth: indicates whether some other constantsize is " equal to " this one . 
+Code-NN : returns the many radians radians listens
+H-Deepcom : indicates whether if for object another exactly the the
+Attnndgru : checks whether this map is equal or equal to another .
+NeuralCodeSum :returns true if the priority map of this priority can be in some other domain .
+Code2seq : compares two objects to equality
+Hybrid-DRL: returns true if the specified object is equal to this object
+Ast-attendgru: compares two instances , returning false if an exception is thrown .
+CodeASTNN : compares this preview to another .
+CASTS  : indicates whether some other object is " equal to " this one .
+---------------------------------------Id: 74
+ code 
+ public void writeOperationsCarFile(){
+  makeBackupFile(defaultOperationsFilename());
+  try {
+    if (!checkFile(defaultOperationsFilename())) {
+      java.io.File file=new java.io.File(defaultOperationsFilename());
+      java.io.File parentDir=file.getParentFile();
+      if (!parentDir.exists()) {
+        if (!parentDir.mkdir()) {
+          log.error("Directory wasn't created");
+        }
+      }
+      if (file.createNewFile()) {
+        log.debug("File created");
+      }
+    }
+    writeFile(defaultOperationsFilename());
+  }
+ catch (  Exception e) {
+    log.error("Exception while writing the new CSV operations file, may not be complete: " + e);
+  }
+}
+Ground Truth: store the all of the operation car objects in the default place , including making a backup if needed 
+Code-NN : store a file to drive player , def the the , place directory a write backup backup backup and new new new new new directory directory directory directory directory directory backup backup backup directory backup directory directory directory directory directory directory directory directory directory directory directory directory directory
+H-Deepcom : writes backup the used the the the - save and and and and to small small small small small . . .
+Attnndgru : this method wraps a backup of the operation shouldn ' t use ' ' and stored in each directory and all subdirectories
+NeuralCodeSum :store all the operation - copied in the backup while written out a backup
+Code2seq : writes the file to the file
+Hybrid-DRL: saves the file to the file
+Ast-attendgru: writes the statistics file ( copy ) of the existing change into the existing file .
+CodeASTNN : store the all of the operation in the default place if needed then build a backup with the backup .
+CASTS  : store the all of the operation engine objects in the default place , including making a backup if needed
+---------------------------------------Id: 75
+ code 
+ public static void sortFields(FieldBinding[] sortedFields,int left,int right){
+  Arrays.sort(sortedFields,left,right,FIELD_COMPARATOR);
+}
+Ground Truth: sort the field array using a quicksort 
+Code-NN : set new a together the fields of a given . ( vertices .
+H-Deepcom : sorts numerical to array array array array
+Attnndgru : helper method to map the range with val inclusive to one position in relationship .
+NeuralCodeSum :sort the field array
+Code2seq : sorts the given range in the
+Hybrid-DRL: sorts a range of a range of a range
+Ast-attendgru: sorts this set in to the specified row and sort the natural sort order .
+CodeASTNN : sort the field array with the components
+CASTS  : sort the field array using the specified quicksort
+---------------------------------------Id: 76
+ code 
+ public static boolean isChildGroup(String group){
+  return group.indexOf(GROUP_DELIMITER) != -1;
+}
+Ground Truth: indicates if a group is a child group , a non - top - level data group in a set of nested data groups ( e . g . , the node or edge table of a graph or tree ) . 
+Code-NN : creates if the group is group child group , a non non ? .
+H-Deepcom : check if a group is a a a a a - group - group group group group group - - , - - - - - - - - - - - - - - - - - - - - - . . . .
+Attnndgru : indicates if group is a child group name / value pairs
+NeuralCodeSum :indicates if a child group is a child of a child group , a child data set in a set of nested data groups , or a child node is a child group - free non - top - top - top - top - top - top - level
+Code2seq : returns true if the group group
+Hybrid-DRL: returns true if the given group is a group
+Ast-attendgru: indicates whether a given group is a child group , false otherwise .
+CodeASTNN : indicates if a group node is a child data group of a data group , e . g . a top - level group in the node or edge
+CASTS  : indicates if a group is a child group , a non - top - level data group in a set of nested data groups ( e . g . , the node or edge table of a graph or tree ) .
+---------------------------------------Id: 77
+ code 
+ public int count(){
+  return n;
+}
+Ground Truth: returns the number of data values . 
+Code-NN : returns the counter of is . reports syntax . . characters . is mappings is this this to to . . . recent digit recent .
+H-Deepcom : counts component filter number counts 2 counts
+Attnndgru : returns the number of values in this array .
+NeuralCodeSum :counts the number of counter in the log .
+Code2seq : returns the number of the elements
+Hybrid-DRL: returns the number of elements in this vector
+Ast-attendgru: counts the number of times in this rule .
+CodeASTNN : counts the number of values in this fluent .
+CASTS  : returns the number of upper tokens .
+---------------------------------------Id: 78
+ code 
+ @Deprecated public boolean isValid(String regex){
+  if (regex == null) {
+    return false;
+  }
+  Pattern pattern=Pattern.compile(regex);
+  Matcher matcher=pattern.matcher(getText());
+  return matcher.matches();
+}
+Ground Truth: if the main text matches the regex 
+Code-NN : check the a pattern matches the regex the the matches leaves matches matches the .
+H-Deepcom : if if this the is the the certain . . . not . . . . . . . . . . . . . . . . . . . . . . . .
+Attnndgru : determine if the assertion with the specified pattern is equal to a percent - value as a valid list identifier name at the moment and port .
+NeuralCodeSum :validate the main text matches the regex
+Code2seq : returns true if the given string
+Hybrid-DRL: check if the text is valid
+Ast-attendgru: if the main text matches the regular expression .
+CodeASTNN : if the main regex matches the regex
+CASTS  : if the main text matches the regex
+---------------------------------------Id: 79
+ code 
+ public void addRole(String role){
+  if (role != null) {
+    roles.add(role);
+  }
+}
+Ground Truth: add a role to this user . 
+Code-NN : adds a role role to this
+H-Deepcom : adds a alias to this for . . roles this this roles
+Attnndgru : add this message .
+NeuralCodeSum :adds the given role to the list of role .
+Code2seq : adds a new argument to the
+Hybrid-DRL: adds a new role to the list
+Ast-attendgru: adds a role of . to indicate that the user already exists .
+CodeASTNN : adds a role to this user if the list of those added .
+CASTS  : adds a role to this user
+---------------------------------------Id: 80
+ code 
+ public ForumPostConfig createReply(ForumPostConfig config){
+  config.addCredentials(this);
+  String xml=POST(this.url + "/create-reply",config.toXML());
+  Element root=parse(xml);
+  if (root == null) {
+    return null;
+  }
+  try {
+    ForumPostConfig reply=new ForumPostConfig();
+    reply.parseXML(root);
+    return reply;
+  }
+ catch (  Exception exception) {
+    this.exception=SDKException.parseFailure(exception);
+    throw this.exception;
+  }
+}
+Ground Truth: create a reply to a forum post . you must set the parent id for the post replying to . 
+Code-NN : update a reply to a forum post . must the set the parent for post the post post to
+H-Deepcom : create a new to a to forum . to to to the the the the the the the the the the the the the the the the the the . . . . . . . . . . . . . . . . . . . .
+Attnndgru : create a reply to a forum post . you must first get the " scheduler " button for event . this is used in special patch config .
+NeuralCodeSum :create a reply to a reply . you must set the parent id to the post .
+Code2seq : parses a new request from the
+Hybrid-DRL: create a reply to the forum post
+Ast-attendgru: create a reply to a forum post . you ' t include the ' - ' mode , which only will be overwritten by the owner id . you must set the id for a specific pick .
+CodeASTNN : create a reply to a forum post . you must set the post id for the post replying to .
+CASTS  : create a reply to a forum post . you must set the parent id for the post replying to .
+---------------------------------------Id: 81
+ code 
+ protected void updateRadioLinks(){
+  m_CVBut.setEnabled(true);
+  m_CVText.setEnabled(m_CVBut.isSelected());
+  m_CVLab.setEnabled(m_CVBut.isSelected());
+  m_SeedText.setEnabled(m_CVBut.isSelected());
+  m_SeedLab.setEnabled(m_CVBut.isSelected());
+  if (m_AttributeEvaluatorEditor.getValue() instanceof AttributeTransformer) {
+    m_CVBut.setSelected(false);
+    m_CVBut.setEnabled(false);
+    m_CVText.setEnabled(false);
+    m_CVLab.setEnabled(false);
+    m_SeedText.setEnabled(false);
+    m_SeedLab.setEnabled(false);
+    m_TrainBut.setSelected(true);
+  }
+}
+Ground Truth: updates the enabled status of the input fields and labels . 
+Code-NN : displays a enabled of
+H-Deepcom : updates the the in the the input input selected button editor editor
+Attnndgru : updates the pre - clicked actions of the current event being displayed as a " pressed .
+NeuralCodeSum :updates the enabled status of the selected enabled .
+Code2seq : updates the state of the current
+Hybrid-DRL: called when the buttons is selected
+Ast-attendgru: brings by .
+CodeASTNN : updates the enabled status of the button panel and labels .
+CASTS  : updates the enabled state of the input fields and labels .
+---------------------------------------Id: 82
+ code 
+ public static String right(String s,int width,char fillChar){
+  if (s.length() >= width) {
+    return s;
+  }
+  StringBuffer sb=new StringBuffer(width);
+  for (int i=width - s.length(); --i >= 0; ) {
+    sb.append(fillChar);
+  }
+  sb.append(s);
+  return sb.toString();
+}
+Ground Truth: right justify a string . 
+Code-NN : left justify string string to
+H-Deepcom : returns a string with a single
+Attnndgru : returns the specified width and char array , and returns the character . if the provided string is at point not a width or does not specify words .
+NeuralCodeSum :fills a string with the given width .
+Code2seq : returns a string representation of the
+Hybrid-DRL: returns a string representation of the string
+Ast-attendgru: forward a string with a whitespace ratio .
+CodeASTNN : left justify a string .
+CASTS  : right justify a string .
+---------------------------------------Id: 83
+ code 
+ public static DoubleVector rnorm(int n,double mean,double sd,Random random){
+  if (sd < 0.0)   throw new IllegalArgumentException("standard deviation < 0.0");
+  if (sd == 0.0)   return new DoubleVector(n,mean);
+  DoubleVector v=new DoubleVector(n);
+  for (int i=0; i < n; i++)   v.set(i,(random.nextGaussian() + mean) / sd);
+  return v;
+}
+Ground Truth: generates a sample of a normal distribution . 
+Code-NN : this a normal random of random real normal random
+H-Deepcom : calculates a mean arc the based
+Attnndgru : gets a object that can be under to ( ) and return .
+NeuralCodeSum :generates a random real number from a random vector of n ' s random number .
+Code2seq : returns the distance of the problem
+Hybrid-DRL: generates a double of the distribution
+Ast-attendgru: returns a random number from the distribution .
+CodeASTNN : generates a random m of the distribution
+CASTS  : generates a sample of a chi - square distribution .
+---------------------------------------Id: 84
+ code 
+ protected void warningOccurred(int code){
+  cbLock.lock();
+  try {
+    if ((code < 0) || (code > MAX_WARNING)) {
+      throw new InternalError("Invalid warning index");
+    }
+    processWarningOccurred("com.sun.imageio.plugins.jpeg.JPEGImageReaderResources",Integer.toString(code));
+  }
+  finally {
+    cbLock.unlock();
+  }
+}
+Ground Truth: called by the native code or other classes to signal a warning . the code is used to lookup a localized message to be used when sending warnings to listeners . 
+Code-NN : copy by the machine for debugging . . caller signal warning
+H-Deepcom : called by single object releases only code releases releases by by by message message message message message message message message message message message message message message message message . .
+Attnndgru : check if the requested time has finished loading with its aliases . this form a callback that isn ' t done using split .
+NeuralCodeSum :called by the native code or other classes to signal a warning message to be used to lookup a warning or other classes .
+Code2seq : called when the given thread and
+Hybrid-DRL: adds a code to the object
+Ast-attendgru: this method gets called when a token has been override
+CodeASTNN : called by the native code or other classes to signal a warning . the code is used to lookup a localized message to listeners .
+CASTS  : called by the native code or other classes to signal a warning . the code is used to lookup a localized message to be used when sending warnings to listeners .
+---------------------------------------Id: 85
+ code 
+ private void calculateD(double[] b){
+  int length=mExtremalIndices.size() - 1;
+  mD=new double[length];
+  for (int k=0; k < length; k++) {
+    mD[k]=b[k] * (mGrid.getCosineFrequencyGrid()[mExtremalIndices.get(k)] - mGrid.getCosineFrequencyGrid()[mExtremalIndices.get(length)]);
+  }
+}
+Ground Truth: calculates the set of d values for the current extremal index set . implements oppenheim / schafer discrete time signal processing , 3e , 2016 , equation 116c 
+Code-NN : the gamma of two
+H-Deepcom : calculates the indices step number the the . .
+Attnndgru : calculate ( between * n ) step for each point in the split , and the scores for to the same .
+NeuralCodeSum :calculates the value of the set of extremal indices to be relatively using the standard error signal processing . this signal uses the standard error signal counts , how often / schafer , which might be set to get the value of a corresponding frequency signal processing / schafer to
+Code2seq : returns the minimum from the given
+Hybrid-DRL: computes the maximum of the extremal index of the extremal index
+Ast-attendgru: calculate the i - dependent time - in frequency grid for integer sorting .
+CodeASTNN : calculates the value of b processing by extremal the set of extremal indices in the frequency set of extremal indices .
+CASTS  : calculates the value of b across the set of extremal indices . implements oppenheim / schafer discrete time signal processing , 3e , 2016 , equation 115
+---------------------------------------Id: 86
+ code 
+ public double adjustedPow10(double val){
+  boolean negFlag=(val < 0.0);
+  if (negFlag) {
+    val=-val;
+  }
+  double res;
+  if (val < 1.0) {
+    res=(Math.pow(10,val + 1.0) - 10.0) / 9.0;
+  }
+ else {
+    res=Math.pow(10,val);
+  }
+  return negFlag ? (-res) : res;
+}
+Ground Truth: returns an adjusted power of 10 value for graphing purposes . the first adjustment is that negative values are changed to positive during the calculations , and then the answer is negated at the end . the second is that , for values less than 1 , a progressive logarithmic offset is subtracted such that at 0 the returned result is also 0 . 
+Code-NN : returns the adjusted value value for adjusted based direction the positive adjustment is negative into positive positive attempt . . . . . if answer answer " " calculations is is is is value value value value value value value value is is is is below otherwise is below
+H-Deepcom : returns the double into respect double range coordinate . . . . adjustment range range range range range . . . . . . . . . . . . . . negated negated negated negated negated negated negated negated negated negated negated negated negated negated negated negated negated
+Attnndgru : convert a ipv4 first , digits to a character . < p > this method creates a number of times to see if it has value ( with " numerical . i . e " ) = - value " ( " - > " ) - linear
+NeuralCodeSum :returns an adjusted log10 value for graphing purposes . the first adjustment is that negative values are stored in the positive numbers , and then the answer is not accurate to the calculations .
+Code2seq : returns the distance of the given
+Hybrid-DRL: returns the value of the given value
+Ast-attendgru: calculates an adjusted log10 by a normal value .
+CodeASTNN : returns a calculations value , positive the first adjustment between 0 and the calculations is changed to positive ( 0 , 0 ) . the answer is always an increasingly large function , and the first is that , and then the answer is the upper positive at the first
+CASTS  : returns an adjusted log10 value for graphing purposes . the first adjustment is that negative values are changed to positive during the calculations , and then the answer is negated at the end . the second is that , for values less than 10 , an increasingly large ( 0
+---------------------------------------Id: 87
+ code 
+ private void fetchMyServiceCardsFromServer(){
+  RetroCallback retroCallback;
+  retroCallback=new RetroCallback(this);
+  retroCallback.setRequestId(HttpConstants.ApiResponseCodes.GET_MY_SERVICES);
+  retroCallbackList.add(retroCallback);
+  mYeloApi.getMyServiceCards(retroCallback);
+}
+Ground Truth: helper http function to get list of my service cards . 
+Code-NN : add http call callback get filter - my service cards cards .
+H-Deepcom : api this operation during configuration waiting waiting waiting - ' ' received received received . . . . . received received received received received received received received . . . . . . . . .
+Attnndgru : this method removes a server state .
+NeuralCodeSum :helper http function to fetch list of my service cards
+Code2seq : initialize the server manager
+Hybrid-DRL: this method calls the method
+Ast-attendgru: helper http function to clone the service
+CodeASTNN : helper http function call fetches service cards
+CASTS  : helper http function to get list of my service cards .
+---------------------------------------Id: 88
+ code 
+ public List<ColourChange> sampleConditionalMigrationEvents2(int parentColour,double parentHeight,int childColour,double childHeight,double[] m){
+  List<ColourChange> colourChanges=new ArrayList<ColourChange>();
+  if (parentHeight < childHeight) {
+    throw new IllegalArgumentException("sampleConditionalMigrationEvents: parentHeight=" + parentHeight + " childHeight="+ childHeight+ ", not good.");
+  }
+  try {
+    int currentColour=parentColour;
+    double currentHeight=parentHeight;
+    while (true) {
+      ColourChange nextEvent=randomConditionalMigrationEvent(currentColour,currentHeight,childColour,childHeight,m);
+      currentHeight=nextEvent.getTime();
+      currentColour=nextEvent.getColourAbove();
+      colourChanges.add(nextEvent);
+    }
+  }
+ catch (  NoEventException nee) {
+  }
+  reverseColourChangeList(colourChanges,parentColour);
+  return colourChanges;
+}
+Ground Truth: samples migration events on a two - coloured branch , conditional on colours at both ends migration process is forwards in ( natural ) time , so we are going down the tree . returns a list of events , ordered forward in time ( i . e . colour refers to branch * below * the event ) * 
+Code-NN : calculate the of that a and bit the % is event and and unbalanced and on recorded two . . test . . . . . . . .
+H-Deepcom : this a by on on an , here here here , , , , , , the the events events events events events events events events events events events events events events events events events events events events events events events events events events events events events events events
+Attnndgru : convenience function to signal that the given task is on cell and that they build a rectangle . the expected position and edges are taken on single tree using . tries to collect it information in a pass of the events .
+NeuralCodeSum :samples migration events on a two - ) time out of colours branch is forwards , so time is forwards in forwards migration process migration in time ( natural ) time , conditional returns a migration time . returns a conditional on both migration time , conditional on whether there
+Code2seq : this method will be the layout
+Hybrid-DRL: returns a list of y translation of the y translation of the
+Ast-attendgru: based on a tree , starting at least one pixel .
+CodeASTNN : expands events in a list of events , so ordered , handling an ordered list of events at both ends in time .
+CASTS  : samples migration events on a two - coloured branch , conditional on colours at both ends migration process is forwards in ( natural ) time , so we are going down the tree . returns a list of events , ordered forward in time ( i . e . colour
+---------------------------------------Id: 89
+ code 
+ public final int first_common_layer(BrdItem p_other){
+  int max_first_layer=Math.max(first_layer(),p_other.first_layer());
+  int min_last_layer=Math.min(last_layer(),p_other.last_layer());
+  if (max_first_layer > min_last_layer) {
+    return -1;
+  }
+  return max_first_layer;
+}
+Ground Truth: returns the first layer , where both this item and p_other have a shape . returns - 1 , if such a layer does not exisr . 
+Code-NN : returns the set layer the the on . vector and p_other . . shape . . . . . .
+H-Deepcom : returns the layer operation is the the inside it it it it the is is is , , , is is is indicate indicate indicate indicate indicate indicate indicate indicate indicate the . . . . . . . . . . . . . . . . .
+Attnndgru : merges this item with the current selection . if the item at the previous most end of other most have the end of the input vector , this operation is the total most - legal call to the caller .
+NeuralCodeSum :returns the first layer , where both , or has a layer . returns - 1 if such a layer can be excluded .
+Code2seq : returns the height of the view
+Hybrid-DRL: returns the last item in this item in this item
+Ast-attendgru: returns the smallest ( not b ) on the right - intersection .
+CodeASTNN : returns the last layer , where both this item and p_other have a shape , and p_other . returns - 1 , if both .
+CASTS  : returns the first layer , where both this item and p_other have a shape . returns - 1 , where such a layer does not exisr . returns - 1 , if such a layer does not exisr .
+---------------------------------------Id: 90
+ code 
+ @Override public boolean lock(){
+  try {
+    if (!FileFactory.isFileExist(location,FileFactory.getFileType(tmpPath))) {
+      FileFactory.mkdirs(location,FileFactory.getFileType(tmpPath));
+    }
+    String lockFilePath=location + CarbonCommonConstants.FILE_SEPARATOR + lockFile;
+    if (!FileFactory.isFileExist(lockFilePath,FileFactory.getFileType(location))) {
+      FileFactory.createNewLockFile(lockFilePath,FileFactory.getFileType(location));
+    }
+    fileOutputStream=new FileOutputStream(lockFilePath);
+    channel=fileOutputStream.getChannel();
+    try {
+      fileLock=channel.tryLock();
+    }
+ catch (    OverlappingFileLockException e) {
+      return false;
+    }
+    if (null != fileLock) {
+      return true;
+    }
+ else {
+      return false;
+    }
+  }
+ catch (  IOException e) {
+    return false;
+  }
+}
+Ground Truth: lock api for locking of the file channel of the lock file . 
+Code-NN : lock method new locking object the a channel path destination to it it the database
+H-Deepcom : lock the and locking the the acquire
+Attnndgru : lock api for locking from .
+NeuralCodeSum :lock api for locking of file channel
+Code2seq : creates a new entry of the
+Hybrid-DRL: load the lock data from the file
+Ast-attendgru: file object for high bits
+CodeASTNN : lock api for locking of the file of the lock api .
+CASTS  : lock api for locking of the file channel of the api api .
+---------------------------------------Id: 91
+ code 
+ public void removeEventListener(ZWaveEventListener eventListener){
+synchronized (zwaveEventListeners) {
+    zwaveEventListeners.remove(eventListener);
+  }
+}
+Ground Truth: remove a listener for zwave events to this controller . 
+Code-NN : removes a messages events of the . . . .
+H-Deepcom : removes a listener to the listener . .
+Attnndgru : used to remove a listener to this listener with your overridden to receive an event listener .
+NeuralCodeSum :remove a zwave event listener .
+Code2seq : removes the event listener from
+Hybrid-DRL: removes a listener from the list
+Ast-attendgru: remove a event listener from this event
+CodeASTNN : removes a listener from this controller .
+CASTS  : remove a listener for zwave events .
+---------------------------------------Id: 92
+ code 
+ public void resetReferences(){
+  if (_refs != null)   _refs.clear();
+}
+Ground Truth: resets the references for streaming . 
+Code-NN : removes the list to the variables variables collection collection references variables variables waiting
+H-Deepcom : trim all streaming
+Attnndgru : clear the list of players names for .
+NeuralCodeSum :resets references for streaming .
+Code2seq : removes all the elements from the
+Hybrid-DRL: removes the list list
+Ast-attendgru: resets the references to its initial value .
+CodeASTNN : resets the references for references .
+CASTS  : resets the references for streaming .
+---------------------------------------Id: 93
+ code 
+ public static Request newUploadVideoRequest(Session session,File file,Callback callback) throws FileNotFoundException {
+  ParcelFileDescriptor descriptor=ParcelFileDescriptor.open(file,ParcelFileDescriptor.MODE_READ_ONLY);
+  Bundle parameters=new Bundle(1);
+  parameters.putParcelable(file.getName(),descriptor);
+  return new Request(session,MY_VIDEOS,parameters,HttpMethod.POST,callback);
+}
+Ground Truth: creates a new request configured to upload a photo to the user ' s default photo album . the photo will be read from the specified file descriptor . 
+Code-NN : launch a new request configured to upload video video the user user device device times . album video video video the the the the file file . . . . . . " " " " " " " " configuration configuration configuration configuration configuration configuration configuration configuration
+H-Deepcom : add a new request . the to
+Attnndgru : creates a new request for a download request .
+NeuralCodeSum :creates a new request configured to upload a video to upload .
+Code2seq : creates a new request to the
+Hybrid-DRL: creates a new instance of the given file
+Ast-attendgru: creates a speech object from a request .
+CodeASTNN : checks a video request configured to upload the video specified by the user ' s video . the video id will be read from the video and the new video .
+CASTS  : creates a new request configured to upload a video to the user ' s default video album . the video will be read from the specified file .
+---------------------------------------Id: 94
+ code 
+ protected void encodeLineSuffix(OutputStream aStream) throws IOException {
+  pStream.println();
+}
+Ground Truth: encode the suffix that ends every output line . by default this method just prints a < newline > into the output stream . 
+Code-NN : 109 a encode whether suffix the file stream
+H-Deepcom : 109 * encode the the followed ends output output * 110 * 110 110 method method method method newline . . . . . . . .
+Attnndgru : 109 * encode the suffix that ends every output line . by default 110 this method just prints a new legal split ( which the algorithm on source string can ' t be specified in brackets , but as groovy on top after this method pattern after a reference
+NeuralCodeSum :109 * prints the suffix that ends with a prefix of the output stream . by default this method just prints a < newline >
+Code2seq : writes the contents of the given
+Hybrid-DRL: writes a stream to the output stream
+Ast-attendgru: 109 * encode the suffix that ends every output line . by default 110 this method just prints a < newline > into an output stream that is not a multiple - state following the following char : just appends the original line suffix to an application that is
+CodeASTNN : 109 * encode a newline into the 109 output stream .
+CASTS  : 109 * encode the suffix that ends every output line . by default 110 this method just prints a < newline > into the output stream . 111
+---------------------------------------Id: 95
+ code 
+ public void testWildcardsDoesNotNeedTwoDots() throws Exception {
+  String cert="-----BEGIN CERTIFICATE-----\n" + "MIIBjDCCATagAwIBAgIJAOVulXCSu6HuMA0GCSqGSIb3DQEBBQUAMBAxDjAMBgNV\n" + "BAMUBSouY29tMCAXDTEwMTIyMDE2NDkzOFoYDzIxMTAxMTI2MTY0OTM4WjAQMQ4w\n"+ "DAYDVQQDFAUqLmNvbTBcMA0GCSqGSIb3DQEBAQUAA0sAMEgCQQDJd8xqni+h7Iaz\n"+ "ypItivs9kPuiJUqVz+SuJ1C05SFc3PmlRCvwSIfhyD67fHcbMdl+A/LrIjhhKZJe\n"+ "1joO0+pFAgMBAAGjcTBvMB0GA1UdDgQWBBS4Iuzf5w8JdCp+EtBfdFNudf6+YzBA\n"+ "BgNVHSMEOTA3gBS4Iuzf5w8JdCp+EtBfdFNudf6+Y6EUpBIwEDEOMAwGA1UEAxQF\n"+ "Ki5jb22CCQDlbpVwkruh7jAMBgNVHRMEBTADAQH/MA0GCSqGSIb3DQEBBQUAA0EA\n"+ "U6LFxmZr31lFyis2/T68PpjAppc0DpNQuA2m/Y7oTHBDi55Fw6HVHCw3lucuWZ5d\n"+ "qUYo4ES548JdpQtcLrW2sA==\n"+ "-----END CERTIFICATE-----";
+  CertificateFactory cf=CertificateFactory.getInstance("X.509");
+  InputStream in=new ByteArrayInputStream(cert.getBytes("UTF-8"));
+  X509Certificate x509=(X509Certificate)cf.generateCertificate(in);
+  mySSLSession session=new mySSLSession(new X509Certificate[]{x509});
+  HostnameVerifier verifier=HttpsURLConnection.getDefaultHostnameVerifier();
+  assertTrue(verifier.verify("google.com",session));
+}
+Ground Truth: earlier implementations of android ' s hostname verifier required that wildcard names wouldn ' t match " * . com " or similar . this was a nonstandard check that we ' ve since dropped . it is the ca ' s responsibility to not hand out certificates that match so broadly . 
+Code-NN : earlier implementations certificate ' s verifier default wildcard names wouldn ' ' that * com com com . similar similar is was a a a ' ' ' since since since ' ' is is ' ' s s s s s s s certificates
+H-Deepcom : earlier implementations of if s ' hostname hostname was supports hostname wouldn wouldn . . . . . . . . . . . . . ' ve ve ve ' ' ' ' ' ' ' ' ' ' ' ' ' ve the the the the '
+Attnndgru : earlier implementations of android ' s hostname verifier required that wildcard names wouldn ' t match " * . com " or similar . this was a check that we can check on original pool when source is fully - use from the .
+NeuralCodeSum :earlier implementations of android ' s hostname verifier required that wildcard names wouldn ' t match " * " * " * " or similar . com " * " , com " * " * 32 " . com " if the nonstandard earlier earlier out , or similar
+Code2seq : test the ssl ssl socket
+Hybrid-DRL: test the password of the url
+Ast-attendgru: earlier implementations of android ' s hostname verifier required that wildcard names wouldn ' t match " .
+CodeASTNN : earlier implementations of hostname ' s hostname verifier required that match the ca ' s hostname . since nonstandard names match this hostname is dropped . it ' s responsibility to match the ca and implementations that ' s responsibility must match the ca is required since that ' s
+CASTS  : earlier implementations of android ' s hostname verifier required that wildcard names wouldn ' t match " * . com " or similar . this was a nonstandard check that we ' ve since dropped . it is the ca ' s responsibility to not hand out certificates that match
+---------------------------------------Id: 96
+ code 
+ private void generateUniformIntegerExamples(Instances format,int numInstances,SubspaceClusterDefinition cl,String cName){
+  Instance example=null;
+  int numAtts=m_NumAttributes;
+  if (getClassFlag()) {
+    numAtts++;
+  }
+  example=new DenseInstance(numAtts);
+  example.setDataset(format);
+  boolean[] attributes=cl.getAttributes();
+  double[] minValue=cl.getMinValue();
+  double[] maxValue=cl.getMaxValue();
+  int[] minInt=new int[minValue.length];
+  int[] maxInt=new int[maxValue.length];
+  int[] intValue=new int[maxValue.length];
+  int[] numInt=new int[minValue.length];
+  int num=1;
+  for (int i=0; i < minValue.length; i++) {
+    minInt[i]=(int)Math.ceil(minValue[i]);
+    maxInt[i]=(int)Math.floor(maxValue[i]);
+    numInt[i]=(maxInt[i] - minInt[i] + 1);
+    num=num * numInt[i];
+  }
+  int numEach=numInstances / num;
+  int rest=numInstances - numEach * num;
+  for (int i=0; i < m_NumAttributes; i++) {
+    if (attributes[i]) {
+      example.setValue(i,minInt[i]);
+      intValue[i]=minInt[i];
+    }
+ else {
+      example.setMissing(i);
+    }
+  }
+  if (getClassFlag()) {
+    example.setClassValue(cName);
+  }
+  int added=0;
+  int attr=0;
+  do {
+    for (int k=0; k < numEach; k++) {
+      format.add(example);
+      example=(Instance)example.copy();
+      added++;
+    }
+    if (rest > 0) {
+      format.add(example);
+      example=(Instance)example.copy();
+      added++;
+      rest--;
+    }
+    if (added >= numInstances) {
+      break;
+    }
+    boolean done=false;
+    do {
+      if (attributes[attr] && (intValue[attr] + 1 <= maxInt[attr])) {
+        intValue[attr]++;
+        done=true;
+      }
+ else {
+        attr++;
+      }
+    }
+ while (!done);
+    example.setValue(attr,intValue[attr]);
+  }
+ while (added < numInstances);
+}
+Ground Truth: generate examples for a uniform cluster dataset . 
+Code-NN : generate a to of uniform cluster dataset .
+H-Deepcom : generates is - to an for
+Attnndgru : generates a new table ( for example ) .
+NeuralCodeSum :generate a simple dataset for the dataset .
+Code2seq : this method used to check the
+Hybrid-DRL: generate example for the dataset
+Ast-attendgru: generate an integer value from the passed in manner .
+CodeASTNN : generate all uniform cluster values for the dataset .
+CASTS  : generate examples for uniform cluster dataset .
+---------------------------------------Id: 97
+ code 
+ public synchronized boolean removeAll(Collection c){
+  Object[] elements=getArray();
+  int len=elements.length;
+  if (len != 0) {
+    int newlen=0;
+    Object[] temp=new Object[len];
+    for (int i=0; i < len; ++i) {
+      Object element=elements[i];
+      if (!c.contains(element))       temp[newlen++]=element;
+    }
+    if (newlen != len) {
+      setArray(copyOfRange(temp,0,newlen,Object[].class));
+      return true;
+    }
+  }
+  return false;
+}
+Ground Truth: removes from this list all of its elements that are contained in the specified collection . this is a particularly expensive operation in this class because of the need for an internal temporary array . 
+Code-NN : retains union of state in this list that are contained in in specified collection . in other words removes removes removes list list list of of of that contained contained the the the the collection collection
+H-Deepcom : removes all elements elements elements this this this this this this this this this this this this this this this .
+Attnndgru : removes all instances of the given collection , starting from the specified value .
+NeuralCodeSum :removes all of the elements in this list that are contained in the specified collection . this is a particularly expensive operation in this class because of its children that are contained in the specified collection ' s iterator .
+Code2seq : returns true if the given object
+Hybrid-DRL: removes all of the elements from this list
+Ast-attendgru: removes all of the elements from this list . the source is in that .
+CodeASTNN : removes from this list all of its elements that are contained in the specified collection .
+CASTS  : removes from this list all of its elements that are contained in the specified collection . this is a particularly expensive operation in this class because of the need for an internal temporary array .
+---------------------------------------Id: 98
+ code 
+ public Phone createPhone(String value){
+  PhoneField phoneImpl=new PhoneField();
+  try {
+    phoneImpl.setValue(value);
+  }
+ catch (  SdpException s) {
+    s.printStackTrace();
+  }
+  return phoneImpl;
+}
+Ground Truth: returns phone object with the specified value . 
+Code-NN : this a to phonenumber with the phone phone report to the
+H-Deepcom : create contact with the list . . operator operator operator operator operator operator operator operator operator operator
+Attnndgru : it is called by the & resources in the configuration
+NeuralCodeSum :returns a new string with the specified value of this object .
+Code2seq : returns a new value of the
+Hybrid-DRL: creates a new value
+Ast-attendgru: returns a string with the .
+CodeASTNN : creates a phone phone with the specified value .
+CASTS  : returns bandwidth object with the specified value .
+---------------------------------------Id: 99
+ code 
+ private void reloadModelWithNewValue(final Long newValue){
+  final long newValueAsPrimitive=newValue == null ? getModelUpdatePeriod() : newValue;
+  for (  final PropertyChangeListener listener : modelUpdatePeriodListeners) {
+    final PropertyChangeEvent event=new PropertyChangeEvent(this,"model",getModelUpdatePeriod(),newValueAsPrimitive);
+    listener.propertyChange(event);
+  }
+}
+Ground Truth: notify all listeners about cacheperiod property changed . if passed newvalue is null , the oldvalue is taken as new value . this is the case when the reloadmodel is invoked . 
+Code-NN : traverses train property change . . changed . features the be event listeners listeners the the the
+H-Deepcom : update all entries to value to
+Attnndgru : the result to be loaded property .
+NeuralCodeSum :notify all listeners about cacheperiod with the given value changed . if the piecewise is null , the case per is taken . < p > the oldvalue is the case of the property with those updated , the listeners is taken . this is invoked when the oldvalue is
+Code2seq : this method is called when a
+Hybrid-DRL: notify the property change of a value
+Ast-attendgru: update the new set property names if the value has changed ( or the latest action with the new values are to force the associated property definition in the object property changed since the delete operations are ignored if the event has been changed and then re -
+CodeASTNN : notify all the listeners which newvalue newvalue in the oldvalue . if the passed newvalue is null , this is the new value is added .
+CASTS  : notify all listeners about cacheperiod property changed . if passed newvalue is null , the oldvalue is taken as new value . this is the case when the reloadcache is invoked .
+---------------------------------------Id: 100
+ code 
+ public final void decRef() throws IOException {
+  ensureOpen();
+  final int rc=refCount.decrementAndGet();
+  if (rc == 0) {
+    boolean success=false;
+    try {
+      doClose();
+      closed=true;
+      success=true;
+    }
+  finally {
+      if (!success) {
+        refCount.incrementAndGet();
+      }
+    }
+  }
+ else   if (rc < 0) {
+    throw new IllegalStateException("too many decRef calls: refCount is " + rc + " after decrement");
+  }
+}
+Ground Truth: expert : decreases the refcount of this taxonomyreader instance . if the refcount drops to 0 this taxonomy reader is closed . 
+Code-NN : skip the this of refcount can be be should ' so so so interesting interesting stale stale possibly host host host possibly the the the the blocks blocks blocks blocks blocks blocks blocks the generation generation generation generation generation generation generation calculation calculation calculation calculation
+H-Deepcom : invoke ensure decreases refcount refcount refcount method refcount refcount refcount refcount refcount refcount refcount refcount
+Attnndgru : extra formats up the input .
+NeuralCodeSum :expert : decreases the refcount of a refcount .
+Code2seq : closes the underlying stream
+Hybrid-DRL: reads the count of bytes from the stream
+Ast-attendgru: writes the counter to the end of the character stream as a vector , including if refcount is .
+CodeASTNN : expert : increments the refcount of refcount , without using our refcount .
+CASTS  : expert : decreases the refcount of this indexreader instance . if the refcount drops to 0 , then this reader is closed .
+---------------------------------------

@@ -1,0 +1,17 @@
+digraph sub_CFG {
+   // graph-vertices
+   n4   [label="7:  if (i > 0)"];
+   n5   [label="8:  System.out.println('Positive')"];
+   n6   [label="9:  i *= 2"];
+   n7   [label="endif"];
+   n8   [label="11:  System.out.println('Non-positive')"];
+   n9   [label="12:  i *= -2"];
+   // graph-edges
+   n4 -> n5   [label="True"];
+   n5 -> n6;
+   n6 -> n7;
+   n4 -> n8   [label="False"];
+   n8 -> n9;
+   n9 -> n7;
+   // end-of-graph
+}

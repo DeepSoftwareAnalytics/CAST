@@ -1,0 +1,100 @@
+if mins or rate is less then zero throw exception
+not in use
+not in use
+checks user belongs to community and he is an admin or owner
+new if posted less than 7 days
+if mins or rate is less then zero throw exception
+not in use
+checks user belongs to community and he is an admin or owner
+checks weather session has theme display
+not in use
+voodoo to scale the image to 200 x 200
+not in use
+and scrawl the text on the image in 10 rows of 20 chars
+gets the price value
+called for every line of the file
+opens a session and will not bind it to a session context
+closes the session factory
+creates a timeseries for the price type of the hist prices
+creates the symbol
+this adds a property descriptor for the criteria identifier feature
+this adds a property descriptor for the name feature
+this adds a property descriptor for the symbol string feature
+this adds a property descriptor for the factor feature
+this adds a property descriptor for the currency feature
+this adds a property descriptor for the volume feature
+this adds a property descriptor for the trading start time feature
+this adds a property descriptor for the spread feature
+this adds a property descriptor for the trading end time feature
+this adds a property descriptor for the strategy id feature
+this adds a property descriptor for the value feature
+this adds a property descriptor for the start date feature
+this adds a property descriptor for the future style feature
+this adds a property descriptor for the comment feature
+this adds a property descriptor for the currency feature
+this adds a property descriptor for the mode feature
+this adds a property descriptor for the initial margin feature
+this adds a property descriptor for the end date feature
+this adds a property descriptor for the creation date feature
+this adds a property descriptor for the active feature
+this adds a property descriptor for the time base feature
+this adds a property descriptor for the date feature
+this adds a property descriptor for the identifier feature
+this adds a property descriptor for the value feature
+this adds a property descriptor for the option type feature
+this adds a property descriptor for the strategy feature
+this adds a property descriptor for the take profit feature
+this adds a property descriptor for the int option feature
+this adds a property descriptor for the stop loss feature
+this adds a property descriptor for the open feature
+this adds a property descriptor for the close price feature
+this adds a property descriptor for the double option feature
+this adds a property descriptor for the string option feature
+this just records the information
+create a new model
+builds the composite
+b mandatory to be called b
+creates the combiner
+returns the label for the specified type name
+we will set up a dummy model to initialize tree heararchy
+creates a chart
+returns the close value for one item in a series
+returns the close value as a double primitive for an item within a
+returns the high value for one item in a series
+returns the high value as a double primitive for an item within a
+returns the number of items in the specified series
+returns the low value for one item in a series
+returns the low value as a double primitive for an item within a
+returns the open value for one item in a series
+returns the open value as a double primitive for an item within a
+returns the volume value for one item in a series
+returns the volume value as a double primitive for an item within a
+returns the x value for one item in a series
+returns the x value for one item in a series as a date
+returns the y value for one item in a series
+handles activation of the editor or its associated views
+gets whether leading and trailing whitespace characters are being trimmed
+sets whether leading and trailing whitespace characters should be trimmed
+gets the character being used as the column delimiter
+sets the character to use as the column delimiter
+sets the character to use as the record delimiter
+creates a new adapter for an object of class
+creates a new adapter for an object of class
+creates a new adapter for an object of class
+creates a new adapter for an object of class
+creates a new adapter for an object of class
+gets the character to use as a text qualifier in the data
+sets whether text qualifiers will be used while parsing or not
+gets the character being used as a comment signal
+sets the character to use as a comment signal
+gets whether comments are being looked for while parsing or not
+returns a diagnostic describing the errors and warnings listed in the resource
+safety caution to prevent the parser from using large amounts of memory
+safety caution to prevent the parser from using large amounts of memory
+gets the count of columns found in this record
+gets the index of the current record
+gets the count of headers read in by a previous call to
+returns the current column value for a given column index
+returns the current column value for a given column header name
+read the first record of data as column headers
+returns the column header value for a given column index

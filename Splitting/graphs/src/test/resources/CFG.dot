@@ -1,0 +1,25 @@
+digraph CFG {
+   // graph-vertices
+   n1   [label="4:  void main(String[] args)"];
+   n2   [label="5:  int i = 0"];
+   n3   [label="6:  i++"];
+   n4   [label="7:  if (i > 0)"];
+   n5   [label="8:  System.out.println('Positive')"];
+   n6   [label="9:  i *= 2"];
+   n7   [label="endif"];
+   n8   [label="11:  System.out.println('Non-positive')"];
+   n9   [label="12:  i *= -2"];
+   n10   [label="14:  System.out.println('End')"];
+   // graph-edges
+   n1 -> n2;
+   n2 -> n3;
+   n3 -> n4;
+   n4 -> n5   [label="True"];
+   n5 -> n6;
+   n6 -> n7;
+   n4 -> n8   [label="False"];
+   n8 -> n9;
+   n9 -> n7;
+   n7 -> n10;
+   // end-of-graph
+}

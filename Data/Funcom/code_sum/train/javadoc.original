@@ -1,0 +1,99 @@
+mouse up of abstract data view ok button
+returns the state constant value of code new state code
+returns the state constant value of code clean state code
+this method returns the exact sql command like select from table
+this method sets the text of the sql command
+this method returns the title of the sql command
+this method sets the title of the sql command
+this method returns the type of the sql command
+this method sets the type of the sql command
+this method sets the param list of the sql command
+returns true if the data bas connection is open
+retrieves a code database meta data code object that contains
+indicates whether some other object is equal to this one
+returns a hash code value for the object
+returns a string representation of the object
+creates a new empty code statement code object
+returns a code data type code object based on the parameter
+retrieves a code database meta data code object that contains
+this method returns the number of code sql item code s
+this method removes the code sql item code which has the same
+returns the code sql item code object of the code sql single query code
+this method returns the code sql item code which has the same
+this method sets the querys select sql based on the parameter value
+this method loads the parameter attributes from the xml file
+returns the code title code of the code sql item code object
+this method removes every sql item from the set
+this method executes the statement
+sets the data connection used by the code sql set code
+returns a code data type code object based on the parameter
+restores the records original state
+this method commits the changes to the database
+set the code abstract record state code of the record
+this method performs a rollback on the database
+adds the code record field code s to the elements field list
+this method stores the original field values of the record
+b not implemented yet b
+the code dummy element code does not provide
+the code dummy element code does not provide
+returns the current status of the record
+sets up the query to get the structure of the underlying db table
+indicates whether some other object is equal to this one
+compares this object with the specified object for order
+sets the sql query that can delete the underlying db record
+sets the sql query that can update the underlying db record
+drops the result of the last select
+sets the sql query that can insert the underlying db record
+sets the sql query that can select the fields for the record
+returns the code select code query of the record
+this method sets the querys code select code sql based on
+returns the title of the code sql item code containing the
+returns the code insert code query of the record
+this method sets the querys code insert code sql based
+returns the title of the code sql item code containing the
+returns the code update code query of the record
+this method sets the querys code update code sql based
+returns the title of the code sql item code containing the
+returns the code delete code query of the record
+returns the title of the code sql item code containing the
+this method sets the querys code delete code sql based
+this method executes the code update code query
+this method executes the code insert code query
+this method executes the code delete code query
+the save method of a new record performs an insert of the record
+this method returns the exact sql command like select from table
+this method sets the text of the sql command
+this method returns the title of the sql command
+this method sets the title of the sql command
+this method sets the param list of the sql command
+returns the code select code query of the code sql item code
+this method sets the querys structure sql based on the parameter value
+returns the title of the code sql item code containing the
+this method returns the sql command which has the same title as the parameter
+this method loads the parameter attributes from the xml file
+this method sets the querys select sql based on the parameter value
+sets the data connection used by the sql set
+this method sets the querys insert sql based on the parameter value
+this method sets the querys update sql based on the parameter value
+this method sets the querys delete sql based on the parameter value
+this method executes the update query
+sets the fields value to that of the parameter
+this method executes the insert query
+drops the result of the last select
+this method sets the querys structure sql based on the parameter value
+adds a single class folder
+adds jdk tools
+gets the bus
+sets the bus
+retrieve a text based description of this primitive
+retrieval method for the actual primitive
+retrieval method for an individual value string from this objects table
+return a description of this primitive data type
+convenience method for primitive
+return the compression code for this file or null if none is found
+return the compression code for this file as a primitive
+return the number of channels
+return the number of channels for this file as a primitive
+return the sampling rate
+retrieve a string describing this files type
+return the sampling rate for this file as a primitive

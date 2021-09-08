@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Built-By: seyed
+Class-Path: libs/nano-logger-1.1.jar libs/graphs-2.5.0.jar libs/antlr4
+ -4.6.jar libs/antlr-runtime-3.5.2.jar libs/ST4-4.0.8.jar libs/org.abe
+ go.treelayout.core-1.0.3.jar libs/javax.json-1.0.4.jar libs/antlr4-ru
+ ntime-4.6.jar
+Created-By: Apache Maven 3.6.0
+Build-Jdk: 1.8.0_222
+Main-Class: ghaffarian.progex.Main
+

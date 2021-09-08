@@ -1,0 +1,11 @@
+/archive/
+/target/
+/out/
+
+/src/test/resources/java/juliet*
+/src/test/resources/java/benchmark*
+
+nb-configuration.xml
+prepare.sh
+*.log
+*.err

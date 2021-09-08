@@ -1,0 +1,16 @@
+digraph write_test_1 {
+  // graph-vertices
+  v1  [label="V1-test"];
+  v2  [label="V2-test"];
+  v3  [label="V3-test"];
+  v4  [label="V4-test"];
+  // graph-edges
+  v1 -> v2  [label="E1-test"];
+  v1 -> v3  [label="E7-test"];
+  v1 -> v4  [label="E1-test"];
+  v2 -> v3  [label="E7-test"];
+  v2 -> v4  [label="E1-test"];
+  v3 -> v4  [label="E7-test"];
+  v4 -> v1  [label="E7-test"];
+  // end-of-graph
+}

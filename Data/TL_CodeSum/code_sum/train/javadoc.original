@@ -1,0 +1,98 @@
+runs a command on the command line synchronously .
+find price list version and update context
+returns true if less then 5 % of the available memory is free .
+returns a string representation of the object ' s current attributes
+fill the given buffer with random bytes .
+can have multiple of the same unit , to show multiple hits to that unit .
+compute the children of this package fragment . children of jar package fragments can only be iclassfile ( representing . class files ) .
+returns an array containing all of the elements in this list in the correct order .
+static version of lastindexof .
+generate the mac based on hmac_algorithm
+always call this super method from your overridden ondeletecomplete function .
+adjusted log10 to handle values less or equal to zero . < p > the logarithm does not result in real numbers for arguments less or equal to zero , but the plot should still somehow handle such values without crashing . so anything & le ; 0 is mapped to a ' really big negative ' number just for the sake of plotting . < p > note that logarithmicaxis . java in the jfreechart has another interesting idea for modifying the log10 of values & le ; 10 , resulting in a smooth plot for the full real argument range . unfortunately that clobbers values like 1e - 7 , which might be a very real vacuum reading .
+create a new launch configuration .
+parses a date value from the stream .
+gets the project builds for the given project
+returns a string containing the remainder of the characters to be returned by this iterator , without any option processing . if the iterator is currently within a variable expansion , this will only extend to the end of the variable expansion . this method is provided so that iterators may interoperate with string - based apis . the typical sequence of calls is to call skipignored ( ) , then call lookahead ( ) , then parse the string returned by lookahead ( ) , then call jumpahead ( ) to resynchronize the iterator .
+check whether the device contains the specified entity
+runs the test case .
+africa / cairo standard time is eet and daylight time is eest . they no longer use their dst zone but we should continue to parse it properly .
+" logger like " api to be used by rmi implementation
+replaces a query string with tokens of format $ { token - name } with the specified replacement string for all tokens .
+determine if the expression is in plural form .
+inserts an item into the quadtree .
+handles the assignment of the correct values to the hover * field variables that let the painting code now what to paint as hovered .
+utility function to draw a circle text centered at coordinates ( x , y )
+define the singular and plural prefix strings for an item name to be matched at the end , for example " bottle of . . . potion " .
+sets the observer , which will observe the iterator returned in the next call to iterator ( ) method . future calls to iterator ( ) won ' t be observed , unless an observer is set again .
+provides a short description of this request .
+construct a new systempropertiestablemodel .
+is the str a simple match pattern .
+read a dml or pydml file as a string .
+create accessor for the field .
+report the result in json way
+used by the specification create to check if a method is legal to put in the spec . must check the method , and all superclass definitions of the method .
+send message to dslisten - typically an extract next change message
+use interpolator to get t
+attach to a new plot , and display .
+seeks the dex file to the specified absolute position .
+retrieves and removes the head of this queue , waiting if necessary until an element with an expired delay is available on this queue .
+shut down the cluster , including all solr nodes and zookeeper
+permite crear una instancia de la clase pasada como parametro .
+determines if the specified coordinate is in the target touch zone for a corner handle .
+tells whether this session is in a new state or not . a session is in a new state if it was never saved or it was not loaded from an existing session .
+inserts the specified element into this delay queue .
+at the end of the year , record the top 10 teams for the league ' s history .
+constructs a new suffix file filter for an array of suffixs specifying case - sensitivity . < p > the array is not cloned , so could be changed after constructing the instance . this would be inadvisable however .
+creates a new font based on the current settings and also updates the preview . the created font is not only used for the preview , but also to return it when requested from the caller .
+reads a property file into a properties object .
+adds a translator , which is called whenever a class is loaded .
+test for getcurve ( ) method
+close the stream . once a stream has been closed , further read ( ) , ready ( ) , mark ( ) , or reset ( ) invocations will throw an ioexception . closing a previously - closed stream , however , has no effect .
+current thread sleeps for a predefined amount of time . if it has been interrupted , the method would be finished and no exception is thrown .
+add one cookie into cookie store .
+delete tag from file
+init window if it ' s not inited yet and show it at specified coordinates
+lowercase the characters up to the given length
+returns the index of a key in the set .
+releases the external resources that this object depends on . you should not call this method if you still want to use the external resources ( e . g . akka system , async http client store , thread pool for ssh / tcp ) are in use by other objects .
+returns an enumeration describing the available options .
+constructs a new batchedimagerequest object
+establish a scan according to the relation given and startpos : the start - scan object , null means scan all values . the relation is from com . j_spaces . client . templatematchcodes : lt , le , gt , ge ( other codes are not relevant ) endpos - key up to ( or null if no limit in index ) endposinclusive : is the endpos up to ( or down to ) and including ? ordered - according to the condition . gt , ge = = > ascending , lt , le = = = = = > descending . returns an iorderedindexscan object which enables scanning the ordered index , null if no relevant elements to scan
+factory method to call to create a symbol table instance with a randomized seed value .
+populate fields with current data .
+counts the number of unescaped placeholders in the given messagepattern .
+determines whether the current outcome represents the end of a chunk . both the current outcome and the following outcome are provided for making this decision .
+clears this list model .
+the buffer is not modified by this call
+initializes internal state from the contents of a www - authenticate header .
+returns a printable representation of the keyusage .
+add a listener to be notified when startup is complete
+write ( byte [ ] b ) method testing . tests that method writes correct values to the underlying output stream .
+determines if the download should be immediately opened after downloading .
+this method saves the workflow matrix details for every department selected
+writes the current dom document into the given file .
+checks to see if two objects are equal either as nulls or through their comparator
+this method returns true if there are some non - standard mappings to entities other than quot , amp , lt , gt , and its only purpose is for performance .
+quote a string . the string is quoted only if quoting is required due to embedded delimiters , quote characters or the empty string .
+generate a report to the log from all the current spies .
+write a subarray of bytes . pass each through write byte method .
+this method was generated by mybatis generator . this method corresponds to the database table todolist
+test against the " void nextbytes ( byte [ ] ) " method ; it checks out that different securerandom objects being supplied with seed by themselves return different sequencies of bytes as results of their " nextbytes ( byte [ ] ) " methods
+perform a query by combining all current settings and the information passed into this method .
+replace spaces with " % 20 " and backslashes with forward slashes in the input string to generate a well - formed uri string .
+whether or not the game is paused .
+sets the ssl socket factory based on a root certificate trust store .
+reject the session invitation
+parses either " lat , lon " ( spaces optional on either comma side ) or " x y " style formats . spaces can be basically anywhere . and not any whitespace , just the space char .
+returns the value of the prune attribute .
+enqueues the specified number of normal operations . useful to delay faults .
+additional post - processing can happen in derived classes after reading from xml . re - builds the beanconnections .
+checks to see if the target is visible to the unit , always considering sensors .
+there is no xml representation specified for uids . in this implementation uids are represented as strings in the xml output .
+reads a line into the character buffer . \ r \ n is converted to \ n .
+sets the caret of a hex control to a given offset .
+get all conditions as a plain list .
+initializes the batch buffer if necessary , i . e . , for non - incremental loaders .
+direct access to the unisolated connection . may return null if the connection has not been opened yet by this thread .
+called when a new connection has been received . failures are not handled in this class as different servers ( bt , sms , etc ) may want to handle them differently .

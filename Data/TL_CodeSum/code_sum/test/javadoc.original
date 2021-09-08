@@ -1,0 +1,96 @@
+returns a 0 - based depth within the object graph of the current object being serialized .
+checks whether the scheme alters the training dataset during building . if the scheme needs to modify the data it should take a copy of the training data . currently checks for changes to header structure , number of instances , order of instances , instance weights .
+compute the union size of two bitsets .
+tests local candidates with remote version in the middle on key2 .
+actions to perform when the user has closed the dialog with the ok button .
+prints out the classifier .
+returns a new sector whose angles are the extremes of the this sector and another . the new sector ' s minimum latitude and longitude will be the minimum of the two sectors . the new sector ' s maximum latitude and longitude will be the maximum of the two sectors . the sectors are assumed to be normalized to + / - 90 degrees latitude and + / - 180 degrees longitude . the result of the operation is undefined if they are not .
+checks if is double values are equal .
+integer value of a positive bigdecimal
+main recursive method to examine the directory hierarchy .
+get a sorted array containing all column values for a given tuple iterator and field .
+divide with invalid rounding mode
+receives notification of a change to the plot ' s dataset . < p > the axis ranges are updated if necessary .
+invoke the onscheduler ( ) in ischeduler directly as a library
+returns true if specified type is java . lang . string
+api method . returns an entry for the source indexed by the user and the url . this method creates it if it didn ' t already exist .
+validates the given sql statement where its position in the list of statement is the given index . this method does not validate sql syntax .
+converts to object array .
+is this logger instance enabled for the finest level ?
+remove an used up missile from an attacking player .
+creates a new matcher for running coap over tcp .
+recursively does the work
+ask to the user for retyping the pass code just entered before saving it as the current pass code .
+rolls back the worker thread creation . - removes worker from workers , if present - decrements worker count - rechecks for termination , in case the existence of this worker was holding up termination
+insertfunctionalitytest # testinsert4 ( ) . tests insert . . . select with expressions in select query
+writes one entry to the local id map on disk .
+receive notification of the end of an element .
+send a fatal error log message
+leaves can be used for many - to - many relations
+returns a string representation of this vector . < p > note that this string representation shows the bit of index 0 at the leftmost position .
+validate the uri characters within a specific component . the component must be performed after escape encoding . or it doesn ' t include escaped characters . < p > it ' s not that much strict , generous . the strict validation might be performed before being called this method .
+build the final bitmap - pieces to draw in animation
+de - registers a previously - registered virtual - machine shutdown hook .
+bounds the current scroll if necessary
+adds the statistics encapsulated in the supplied evaluation object into this one . does not perform any checks for compatibility between the supplied evaluation object and this one .
+scans all sites until all volumes involved in the recoverpoint protection are visible
+this method is called immediately following cache creation in the spawned process , but prior to setting the running flag in the status file . so the spawning process will block until this method completes .
+update the content of the outline view .
+returns true if , at this time , the object will accept a connection with respect to the named event
+it returns true if the attribute is prefixed ( used the " : " character ) .
+release a non - shard - specific connection .
+adds a collection of actions to the quickactionview
+adds a simple renderer to the multiple renderer .
+copies stream , fires progress events by listener , can be interrupted by listener .
+calculates the needed angle for a given value
+returns a buffer to the pool , throwing away old buffers if the pool would exceed its allotted size .
+append string of the given charseq to this charseq
+this method processes all of the http get requests routed to the servlet by the web container . this method loops through the lists of videos that have been sent to it and generates a plain / text list of the videos that is sent back to the client .
+change the stored state value and do notification , but don ' t change anything in the hardware
+test for getorder ( ) method
+formats and logs a message with a throwable .
+constructs the redis queue sorted set key name given a queue name , shard id and priority .
+decodes the string into specified charset
+adds specified domain name to the list of restricted domains
+create a new read lock from the given lock
+tests fail : always returns false , failing statements commented out . feature only partially implemented . missing : test positive case not supported .
+computes the " interface hash " of the stub / skeleton pair for this remote implementation class . this is the 64 - bit value used to enforce compatibility between a stub class and a skeleton class in the jdk 1 . 1 version of the jrmp stub / skeleton protocol . it is calculated using the first 64 bits of an sha digest . the digest is of a stream consisting of the following data : ( int ) stub version number , always 1 for each remote method , in order of operation number : ( utf - 8 ) method name ( utf - 8 ) method descriptor for each declared exception , in alphabetical name order : ( utf - 8 ) name of exception class ( where " utf - 8 " includes a 16 - bit length prefix as written by java . io . dataoutput . writeutf ) .
+copy the contents of the given byte array to the given outputstream . leaves the stream open when done .
+returns true whether this page doesn ' t contain items , returns false if it does .
+decodes a frame if needed .
+encode parts of the message using text compaction as described in iso / iec 15438 : 2001 ( e ) , chapter 4 . 4 . 2 .
+check to see if a string is a valid ncname according to [ 4 ] from the xml namespaces 1 . 0 recommendation
+appends the specified element to the end of this list .
+prepare the dataset required for running test cases
+returns array of serviceregistrar created from the proxyregset
+check if the supplied value is a valid value .
+find a new primary , adding any failed servers we encounter to the excluded servers list first we try to make a backup server the primary , but if run out of backup servers we will try to find a new server .
+creates a new journal that omits redundant information . this replaces the current journal if it exists .
+removes the recurrence from persistant store .
+copy nodelist members into this nodelist , adding in document order . if a node is null , don ' t add it .
+fetches data if it hasn ' t been fetched in a while .
+introduced in dom level 2 . < p > < p / > creates an empty documenttype node .
+services a commandline request .
+serializes this nested object into byte [ ]
+scempegnextavcrpau - skip one video frame
+given a set of exportmask uris , return a map of exportmask uri to exportmask object
+insert an entry at this index .
+write a graphic to the printout . < p > this was not in the original class , but was added afterwards by kevin dickerson . it is a copy of the write , but without the scaling . < p > the image is positioned on the right side of the paper , at the current height .
+put the source tree root node in the document cache . todo : this function needs to be a lot more sophisticated .
+used to communicate a progress update between a plugin tool and the main whitebox user interface .
+copy a input resource to a output resource
+fade audio file sox < path > outfile fade < type > < fadeinlength > < stoptime > < fadeoutlength >
+todo : to be implemented
+for all the classes , loads all properties from each class annotations for the given platform .
+add a number to zero
+fixes the gps timestamp in exif .
+check if a cell consumes the specified event type .
+read a single character . this method will block until a character is available , an i / o error occurs , or the end of the stream is reached . < p > subclasses that intend to support efficient single - character input should override this method .
+this function is used to plot the y axis and its breakdown with value . uses drawline ( ) method to create the y axis and lines to show breakdown of y axis and drawtext ( ) method to plot labels related with breakdowns
+get running - maximum time - delta , in nanoseconds .
+prints a file with the native desktop printing facility , using the associated application ' s print command .
+extends the existing groundings with the alternative groundings
+this will attempt to read string matching the given pattern from the document at the current point indicated by the cursor . if failed to do so , the method will be expected to throw an exception or take corrective measures .
+test for bug [ 974036 ] bug in 0 . 8rc1 databasemetadata method gettabletypes ( )
+this method will be used to check whether stream is already present in cache or not for filepath if not present then create it and then add to cache , other wise get from cache
+removes a listener from the set of listeners

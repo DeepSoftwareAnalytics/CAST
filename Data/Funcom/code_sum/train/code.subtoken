@@ -1,0 +1,99 @@
+public void mouse up final mouse event mouse event modify save on click
+public int get state return new
+public int get state return clean
+public string get sql command return sql
+public void set sql command final string sql command this sql sql command
+public string get sql title return title
+public void set sql title final string sql title this title sql title
+public string get sql type return type
+public void set sql type final string sql type this type sql type
+public void set param list final map string parameter params this param list params
+public boolean is connection open throws sql exception return connection is closed
+public database meta data get database meta data throws sql exception return connection get meta data
+public boolean equals final object obj super equals obj boolean result if obj this result true else if obj get class oracle connection class result oracle connection obj connection string connection string else result false return result
+public int hash code return h code
+public string to string return connection string
+public statement create statement throws sql exception todo auto generated method stub return connection create statement
+public data type get data type final string column type name todo auto generated method stub return null
+public database meta data get database meta data throws sql exception todo auto generated method stub return null
+public int get sql command count return commands size
+public void remove sql command final string title commands remove title
+public string get sql string result null if sql command null result sql command get sql command return result
+public sql item get sql command final string title return commands get title
+public void set sql title final string sql throws sql exception sql command set get sql command sql if sql command null sql query set get connection prepare statement sql command get sql command
+private parameter load parameter final node param node final element base element param node final string index base get attribute node index get value final string data type base get attribute node data type get value return new parameter integer parse int index param node get text content connection get data type data type
+public string get sql title string result null if sql command null result sql command get sql command return result
+public void flush set commands clear
+public void execute throws sql exception if update equals sql command get sql type sql query execute update else if select equals sql command get sql type clear result set final result set res set sql query execute query try final result set meta data rsmd res set get meta data final int column count rsmd get column count if result set null result set new array list record field res set get row for int j <NUM> res set next j set result fields res set rsmd column count finally res set close else sql query execute
+public void set connection final i connection conn this connection conn
+public data type get data type final string column type name todo auto generated method stub data type result if var char <NUM> equals column type name result data type var char <NUM> if var char equals column type name result data type var char if integer equals column type name result data type integer if datetime equals column type name result data type datetime if long char equals column type name result data type long char if bit equals column type name result data type bit else result data type var char return result
+private void undo modify record field actual record field temp for final iterator record field values memento fields values iterator values has next record fields put actual get name actual temp values next actual temp get copy
+public void commit throws sql exception set get connection commit
+private void set state final int new state switch new state case abstract record state clean <NUM> rs state new clean state this memento fields clear break case abstract record state dirty <NUM> rs state new dirty state this fill memento fields break case abstract record state new <NUM> rs state new new state this break default rs state new new state this break
+public void rollback throws sql exception set get connection rollback
+protected void add fields final record field record field for int i <NUM> i record field length i add field record field i
+private void fill memento fields record field actual record field temp for final iterator record field values record fields values iterator values has next memento fields put actual get name actual temp values next actual temp get copy
+public void delete throws sql exception todo auto generated method stub
+public void before insert does nothing
+public void before update does nothing
+private int get state return rs state get state
+private void set struct query final string struct throws sql exception if struct null equals struct struct command set get sql command struct if struct command null struct query set get connection prepare statement struct command get sql command
+public boolean equals final object obj boolean result if obj this result true if obj get class parameter class result false final parameter prm parameter obj result prm name equals this name prm data type this data type prm index this index return result
+public int compare to final object obj final parameter prm parameter obj return this index prm index
+private void set delete query final string delete throws sql exception if delete null equals delete delete command set get sql command delete if delete command null delete query set get connection prepare statement delete command get sql command
+private void set update query final string update throws sql exception if update null equals update update command set get sql command update if update command null update query set get connection prepare statement update command get sql command
+private void clear result set if result set null result set clear
+private void set insert query final string insert throws sql exception if insert null equals insert insert command set get sql command insert if insert command null insert query set get connection prepare statement insert command get sql command
+private void set select query final string select throws sql exception if select null equals select select command set get sql command select if select command null select query set get connection prepare statement select command get sql command
+public string get select sql string result null if select command null result select command get sql command return result
+public void set select title final string select throws sql exception select command set get sql command select if select command null select query set get connection prepare statement select command get sql command
+public string get select title string result null if select command null result select command get sql command return result
+public string get insert sql string result null if insert command null result insert command get sql command return result
+public void set insert title final string insert throws sql exception insert command set get sql command insert if insert command null insert query set get connection prepare statement insert command get sql command
+public string get insert title string result null if insert command null result insert command get sql title return result
+public string get update sql string result null if update command null result update command get sql command return result
+public void set update title final string update throws sql exception update command set get sql command update if update command null update query set get connection prepare statement update command get sql command
+public string get update title string result null if update command null result update command get sql title return result
+public string get delete sql string result null if delete command null result delete command get sql command return result
+public string get delete title string result null if delete command null result delete command get sql title return result
+public void set delete title final string delete throws sql exception delete command set get sql command delete if delete command null delete query set get connection prepare statement delete command get sql command
+public int update throws sql exception return update query execute update
+public void insert throws sql exception insert query execute
+public void delete throws sql exception delete query execute
+public void save element element throws primary key missing exception sql exception null pointer exception record field fields element get record fields for int i <NUM> i fields length i if fields i is primary key fields i get value null fields i get value equals throw new primary key missing exception element get table fields i get name get class to string insert of record failed for int i <NUM> i fields length i element add insert param value record field fields i element insert data connection get unique instance commit
+public string get sql command return sql command
+public void set sql command string sql command this sql command sql command
+public string get sql title return sql title
+public void set sql title string sql title this sql title sql title
+public void set param list hash table string parameter param list this param list param list
+public string get struct sql string result null if struct command null result struct command get sql command return result
+public void set struct title final string struct throws sql exception struct command set get sql command struct if struct command null struct query set get connection prepare statement struct command get sql command
+public string get struct title string result null if struct command null result struct command get sql title return result
+public sql command get sql command string title return commands get title
+private parameter load parameter node param node element base element param node string index base get attribute node index get value string data type base get attribute node data type get value return new parameter integer parse int index param node get text content integer parse int data type
+public void set select title string select throws sql exception select command set sql command select select command set get sql command select if select command null select query set get connection prepare statement select command get sql command
+public void set connection connection connection this con connection
+public void set insert title string insert throws sql exception insert command set sql command insert insert command set get sql command insert if insert command null insert query set get connection prepare statement insert command get sql command
+public void set update title string update throws sql exception update command set sql command update update command set get sql command update if update command null update query set get connection prepare statement update command get sql command
+public void set delete title string delete throws sql exception delete command set sql command delete delete command set get sql command delete if delete command null delete query set get connection prepare statement delete command get sql command
+public int update throws sql exception null pointer exception return update query execute update
+public void set field value string name string value throws field not found exception if record fields contains key name record field record fields get name set value value else throw new field not found exception table name
+public void insert throws sql exception null pointer exception insert query execute
+public void clear result set if result set null result set clear
+public void set struct title string struct throws sql exception struct command set sql command struct struct command set get sql command struct if struct command null select query set get connection prepare statement struct command get sql command
+public void add class folder file class folder throws io exception add jar class folder
+protected void add jdk tools jar class path helper class path helper try file jdk tools jar class path helper get jdk tools jar if jdk tools jar exists class path helper add jar jdk tools jar else on the mac it happens all the time logger fine jdk tools jar does not exist at jdk tools jar catch io exception e throw new error e
+public mk bus get bus return bus
+public void set bus mk bus bus this bus bus
+public string get primitive description todo add thing to tell big endian and signed unsigned return string reader get value for this get class get name
+public primitive get primitive return primitive
+public string get string for object key return table get key
+public string get description return string reader get value for name
+public boolean value exists return primitive value exists
+public long get compression code primitive data pd get compression code as primitive if pd null return null return new long primitive int pd get primitive get value as long
+private primitive data get compression code as primitive chunk x this get chunk named k lang constants chunk name fmt true if x null return null primitive data pd x get primitive value named k lang constants primitive data fmt chunk sub format if pd get primitive value exists pd x get primitive value named k lang constants primitive data fmt chunk comp code return pd
+public long get num channels primitive data pd get num channels as primitive if pd null return null return new long primitive int pd get primitive get value as long
+private primitive data get num channels as primitive chunk x this get chunk named k lang constants chunk name fmt true if x null return null primitive data pd x get primitive value named k lang constants primitive data fmt chunk num channels return pd
+public long get samp rate primitive data pd get samp rate as primitive if pd null return null return new long primitive int pd get primitive get value as long
+public string get file type return k lang constants get file type description for this get class get name
+private primitive data get samp rate as primitive chunk x this get chunk named k lang constants chunk name fmt true if x null return null primitive data pd x get primitive value named k lang constants primitive data fmt chunk samp rate return pd

@@ -102,8 +102,3 @@ for example
 ### Human evaluation
     
 Click [here](human-evaluation/README.md) to see the result of human evaluation
-
-
-### Others
-
-We 
